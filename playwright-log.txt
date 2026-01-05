@@ -1,0 +1,426 @@
+{"level":30,"time":"2026-01-05T10:46:22.204Z","pid":6328,"hostname":"SAMSUNG","msg":"Listening on 127.0.0.1:53537"}
+{"level":30,"time":"2026-01-05T10:46:22.406Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-01-05T10:46:22.783Z","pid":6328,"hostname":"SAMSUNG","msg":"Adding browser to stack: chromium, version: 141.0.7390.37"}
+{"level":30,"time":"2026-01-05T10:46:22.783Z","pid":6328,"hostname":"SAMSUNG","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-01-05T10:46:22.784Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-01-05T10:46:22.795Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-01-05T10:46:22.796Z","pid":6328,"hostname":"SAMSUNG","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@ff50bc6aef9f7b01489c8537cbf30a95\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=4b527e6d-b189-4bae-b042-cbabff059c71\"}"}
+{"level":30,"time":"2026-01-05T10:46:22.822Z","pid":6328,"hostname":"SAMSUNG","msg":"Setting default timeout for context context=9853d691-ca14-44de-ae1d-0fc52630d1cf to 10000"}
+{"level":30,"time":"2026-01-05T10:46:22.822Z","pid":6328,"hostname":"SAMSUNG","msg":"Changed active context: context=9853d691-ca14-44de-ae1d-0fc52630d1cf"}
+{"level":30,"time":"2026-01-05T10:46:23.183Z","pid":6328,"hostname":"SAMSUNG","msg":"Video path: undefined"}
+{"level":30,"time":"2026-01-05T10:46:23.183Z","pid":6328,"hostname":"SAMSUNG","msg":"Changed active page"}
+{"level":30,"time":"2026-01-05T10:46:23.583Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method newPage"}
+{"level":30,"time":"2026-01-05T10:46:23.598Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:23.599Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=/html/body/jhi-main/div[2]/div/jhi-home/div[2]/div/div/div/span[2] in page."}
+{"level":30,"time":"2026-01-05T10:46:23.647Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:23.661Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method click"}
+{"level":30,"time":"2026-01-05T10:46:23.661Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=/html/body/jhi-main/div[2]/div/jhi-home/div[2]/div/div/div/a in page."}
+{"level":30,"time":"2026-01-05T10:46:23.750Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method click"}
+{"level":30,"time":"2026-01-05T10:46:23.756Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:23.756Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"username\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:24.601Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:24.610Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:24.610Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"username\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:24.629Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:24.638Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:24.638Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"password\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:24.657Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:24.669Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:24.669Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with id=empresa in page."}
+{"level":30,"time":"2026-01-05T10:46:24.684Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:24.690Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:24.690Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with id=empresa in page."}
+{"level":30,"time":"2026-01-05T10:46:24.693Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:24.697Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:24.697Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with id=empresa in page."}
+{"level":30,"time":"2026-01-05T10:46:24.726Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:24.730Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method selectOption"}
+{"level":30,"time":"2026-01-05T10:46:24.730Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"empresa\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:24.758Z","pid":6328,"hostname":"SAMSUNG","msg":"Option entries: 3"}
+{"level":30,"time":"2026-01-05T10:46:24.759Z","pid":6328,"hostname":"SAMSUNG","msg":"Selected entries: 1"}
+{"level":30,"time":"2026-01-05T10:46:24.759Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method selectOption"}
+{"level":30,"time":"2026-01-05T10:46:24.762Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method click"}
+{"level":30,"time":"2026-01-05T10:46:24.763Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=/html/body/jhi-main/div[2]/div/jhi-login/div/div/div/form/button in page."}
+{"level":30,"time":"2026-01-05T10:46:24.843Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method click"}
+{"level":30,"time":"2026-01-05T10:46:24.852Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:24.852Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=/html/body/jhi-main/div[2]/div/jhi-home/div[1]/div/jhi-shortcuts/div/div/a[1] in page."}
+{"level":30,"time":"2026-01-05T10:46:25.228Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:25.237Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method click"}
+{"level":30,"time":"2026-01-05T10:46:25.237Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=/html/body/jhi-main/div[2]/div/jhi-home/div[1]/div/jhi-shortcuts/div/div/a[4] in page."}
+{"level":30,"time":"2026-01-05T10:46:25.317Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method click"}
+{"level":30,"time":"2026-01-05T10:46:25.326Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:25.327Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"page-heading\"]/span[1] in page."}
+{"level":30,"time":"2026-01-05T10:46:25.405Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:25.615Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method goTo"}
+{"level":30,"time":"2026-01-05T10:46:26.057Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method goTo"}
+{"level":30,"time":"2026-01-05T10:46:26.066Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:26.066Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"page-heading\"]/span[contains(text(), \"Compromissos a Pagar- Cartão Mercado Pago \")] in page."}
+{"level":30,"time":"2026-01-05T10:46:26.229Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:26.241Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method click"}
+{"level":30,"time":"2026-01-05T10:46:26.241Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"jh-create-entity\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:26.301Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method click"}
+{"level":30,"time":"2026-01-05T10:46:26.309Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:26.309Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"jhi-commitment-heading\"][contains(text(), \"Criar ou editar Compromisso\")] in page."}
+{"level":30,"time":"2026-01-05T10:46:26.371Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:26.383Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:26.383Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_dia\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:26.405Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:26.411Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:26.411Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_valor\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:26.415Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:26.423Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:26.423Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_valor\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:26.444Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:26.448Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method clearText"}
+{"level":30,"time":"2026-01-05T10:46:26.448Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_valor\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:26.460Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method clearText"}
+{"level":30,"time":"2026-01-05T10:46:26.464Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:26.464Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_valor\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:26.480Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:26.488Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method press"}
+{"level":30,"time":"2026-01-05T10:46:26.488Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_valor\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:26.502Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method press"}
+{"level":30,"time":"2026-01-05T10:46:26.507Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method focus"}
+{"level":30,"time":"2026-01-05T10:46:26.507Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_valor\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:26.517Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method focus"}
+{"level":30,"time":"2026-01-05T10:46:26.523Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:26.523Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_historia\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:26.539Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:26.543Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:26.543Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_nrepeat\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:26.557Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:26.561Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:26.561Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_natureplan\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:26.565Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:26.572Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:26.572Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_natureplan\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:26.575Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:26.578Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:26.578Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_natureplan\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:26.588Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:26.592Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method selectOption"}
+{"level":30,"time":"2026-01-05T10:46:26.592Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_natureplan\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:26.612Z","pid":6328,"hostname":"SAMSUNG","msg":"Option entries: 38"}
+{"level":30,"time":"2026-01-05T10:46:26.612Z","pid":6328,"hostname":"SAMSUNG","msg":"Selected entries: 1"}
+{"level":30,"time":"2026-01-05T10:46:26.613Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method selectOption"}
+{"level":30,"time":"2026-01-05T10:46:26.623Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method click"}
+{"level":30,"time":"2026-01-05T10:46:26.623Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"save-entity\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:26.700Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method click"}
+{"level":30,"time":"2026-01-05T10:46:26.713Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:26.713Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"page-heading\"]/span[contains(text(), \"Compromissos a Pagar- Cartão Mercado Pago \")] in page."}
+{"level":30,"time":"2026-01-05T10:46:26.773Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:26.803Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method goTo"}
+{"level":30,"time":"2026-01-05T10:46:26.908Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method goTo"}
+{"level":30,"time":"2026-01-05T10:46:26.914Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:26.915Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"page-heading\"]/span[contains(text(), \"Compromissos a Pagar- Cartão Mercado Pago \")] in page."}
+{"level":30,"time":"2026-01-05T10:46:26.971Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:26.978Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method click"}
+{"level":30,"time":"2026-01-05T10:46:26.978Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"jh-create-entity\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:27.083Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method click"}
+{"level":30,"time":"2026-01-05T10:46:27.088Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:27.088Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"jhi-commitment-heading\"][contains(text(), \"Criar ou editar Compromisso\")] in page."}
+{"level":30,"time":"2026-01-05T10:46:27.147Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:27.161Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:27.161Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_dia\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:27.178Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:27.185Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:27.186Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_valor\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:27.190Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:27.193Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:27.193Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_valor\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:27.220Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:27.223Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method clearText"}
+{"level":30,"time":"2026-01-05T10:46:27.223Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_valor\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:27.239Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method clearText"}
+{"level":30,"time":"2026-01-05T10:46:27.243Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:27.243Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_valor\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:27.254Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:27.257Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method press"}
+{"level":30,"time":"2026-01-05T10:46:27.257Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_valor\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:27.270Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method press"}
+{"level":30,"time":"2026-01-05T10:46:27.273Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method focus"}
+{"level":30,"time":"2026-01-05T10:46:27.273Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_valor\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:27.280Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method focus"}
+{"level":30,"time":"2026-01-05T10:46:27.288Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:27.288Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_historia\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:27.304Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:27.307Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:27.308Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_nrepeat\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:27.322Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:27.325Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:27.325Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_natureplan\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:27.328Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:27.334Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:27.335Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_natureplan\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:27.338Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:27.341Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:27.341Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_natureplan\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:27.353Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:27.357Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method selectOption"}
+{"level":30,"time":"2026-01-05T10:46:27.357Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_natureplan\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:27.376Z","pid":6328,"hostname":"SAMSUNG","msg":"Option entries: 38"}
+{"level":30,"time":"2026-01-05T10:46:27.376Z","pid":6328,"hostname":"SAMSUNG","msg":"Selected entries: 1"}
+{"level":30,"time":"2026-01-05T10:46:27.376Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method selectOption"}
+{"level":30,"time":"2026-01-05T10:46:27.379Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method click"}
+{"level":30,"time":"2026-01-05T10:46:27.379Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"save-entity\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:27.460Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method click"}
+{"level":30,"time":"2026-01-05T10:46:27.479Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:27.480Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"page-heading\"]/span[contains(text(), \"Compromissos a Pagar- Cartão Mercado Pago \")] in page."}
+{"level":30,"time":"2026-01-05T10:46:27.531Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:27.560Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method goTo"}
+{"level":30,"time":"2026-01-05T10:46:27.672Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method goTo"}
+{"level":30,"time":"2026-01-05T10:46:27.680Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:27.681Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"page-heading\"]/span[contains(text(), \"Compromissos a Pagar- Cartão Mercado Pago \")] in page."}
+{"level":30,"time":"2026-01-05T10:46:27.753Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:27.763Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method click"}
+{"level":30,"time":"2026-01-05T10:46:27.763Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"jh-create-entity\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:27.861Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method click"}
+{"level":30,"time":"2026-01-05T10:46:27.869Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:27.869Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"jhi-commitment-heading\"][contains(text(), \"Criar ou editar Compromisso\")] in page."}
+{"level":30,"time":"2026-01-05T10:46:27.914Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:27.927Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:27.927Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_dia\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:27.943Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:27.948Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:27.948Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_valor\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:27.955Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:27.959Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:27.959Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_valor\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:27.984Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:27.989Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method clearText"}
+{"level":30,"time":"2026-01-05T10:46:27.990Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_valor\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:28.005Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method clearText"}
+{"level":30,"time":"2026-01-05T10:46:28.011Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:28.011Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_valor\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:28.024Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:28.028Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method press"}
+{"level":30,"time":"2026-01-05T10:46:28.029Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_valor\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:28.045Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method press"}
+{"level":30,"time":"2026-01-05T10:46:28.053Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method focus"}
+{"level":30,"time":"2026-01-05T10:46:28.053Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_valor\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:28.062Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method focus"}
+{"level":30,"time":"2026-01-05T10:46:28.072Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:28.072Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_historia\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:28.086Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:28.090Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:28.090Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_nrepeat\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:28.105Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:28.110Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:28.110Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_natureplan\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:28.117Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:28.122Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:28.122Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_natureplan\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:28.126Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:28.129Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:28.129Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_natureplan\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:28.150Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:28.154Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method selectOption"}
+{"level":30,"time":"2026-01-05T10:46:28.154Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_natureplan\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:28.174Z","pid":6328,"hostname":"SAMSUNG","msg":"Option entries: 38"}
+{"level":30,"time":"2026-01-05T10:46:28.174Z","pid":6328,"hostname":"SAMSUNG","msg":"Selected entries: 1"}
+{"level":30,"time":"2026-01-05T10:46:28.174Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method selectOption"}
+{"level":30,"time":"2026-01-05T10:46:28.178Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method click"}
+{"level":30,"time":"2026-01-05T10:46:28.178Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"save-entity\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:28.250Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method click"}
+{"level":30,"time":"2026-01-05T10:46:28.262Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:28.262Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"page-heading\"]/span[contains(text(), \"Compromissos a Pagar- Cartão Mercado Pago \")] in page."}
+{"level":30,"time":"2026-01-05T10:46:28.324Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:28.355Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method goTo"}
+{"level":30,"time":"2026-01-05T10:46:28.473Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method goTo"}
+{"level":30,"time":"2026-01-05T10:46:28.479Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:28.479Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"page-heading\"]/span[contains(text(), \"Compromissos a Pagar- Cartão Mercado Pago \")] in page."}
+{"level":30,"time":"2026-01-05T10:46:28.586Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:28.592Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method click"}
+{"level":30,"time":"2026-01-05T10:46:28.592Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"jh-create-entity\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:28.747Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method click"}
+{"level":30,"time":"2026-01-05T10:46:28.756Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:28.757Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"jhi-commitment-heading\"][contains(text(), \"Criar ou editar Compromisso\")] in page."}
+{"level":30,"time":"2026-01-05T10:46:28.770Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:28.777Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:28.777Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_dia\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:28.792Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:28.795Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:28.795Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_valor\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:28.804Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:28.807Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:28.807Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_valor\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:28.825Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:28.828Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method clearText"}
+{"level":30,"time":"2026-01-05T10:46:28.829Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_valor\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:28.844Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method clearText"}
+{"level":30,"time":"2026-01-05T10:46:28.852Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:28.852Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_valor\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:28.859Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:28.864Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method press"}
+{"level":30,"time":"2026-01-05T10:46:28.864Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_valor\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:28.876Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method press"}
+{"level":30,"time":"2026-01-05T10:46:28.881Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method focus"}
+{"level":30,"time":"2026-01-05T10:46:28.881Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_valor\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:28.891Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method focus"}
+{"level":30,"time":"2026-01-05T10:46:28.895Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:28.895Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_historia\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:28.910Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:28.917Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:28.917Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_nrepeat\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:28.929Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:28.937Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:28.937Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_natureplan\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:28.942Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:28.945Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:28.945Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_natureplan\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:28.950Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:28.954Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:28.954Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_natureplan\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:28.962Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:28.967Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method selectOption"}
+{"level":30,"time":"2026-01-05T10:46:28.967Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_natureplan\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:28.984Z","pid":6328,"hostname":"SAMSUNG","msg":"Option entries: 38"}
+{"level":30,"time":"2026-01-05T10:46:28.984Z","pid":6328,"hostname":"SAMSUNG","msg":"Selected entries: 1"}
+{"level":30,"time":"2026-01-05T10:46:28.984Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method selectOption"}
+{"level":30,"time":"2026-01-05T10:46:28.987Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method click"}
+{"level":30,"time":"2026-01-05T10:46:28.987Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"save-entity\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:29.058Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method click"}
+{"level":30,"time":"2026-01-05T10:46:29.073Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:29.073Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"page-heading\"]/span[contains(text(), \"Compromissos a Pagar- Cartão Mercado Pago \")] in page."}
+{"level":30,"time":"2026-01-05T10:46:29.125Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:29.147Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method goTo"}
+{"level":30,"time":"2026-01-05T10:46:29.251Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method goTo"}
+{"level":30,"time":"2026-01-05T10:46:29.260Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:29.260Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"page-heading\"]/span[contains(text(), \"Compromissos a Pagar- Cartão Mercado Pago \")] in page."}
+{"level":30,"time":"2026-01-05T10:46:29.397Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:29.409Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method click"}
+{"level":30,"time":"2026-01-05T10:46:29.409Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"jh-create-entity\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:29.473Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method click"}
+{"level":30,"time":"2026-01-05T10:46:29.480Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:29.481Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"jhi-commitment-heading\"][contains(text(), \"Criar ou editar Compromisso\")] in page."}
+{"level":30,"time":"2026-01-05T10:46:29.528Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:29.544Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:29.544Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_dia\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:29.560Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:29.567Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:29.567Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_valor\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:29.571Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:29.575Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:29.575Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_valor\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:29.598Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:29.604Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method clearText"}
+{"level":30,"time":"2026-01-05T10:46:29.604Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_valor\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:29.618Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method clearText"}
+{"level":30,"time":"2026-01-05T10:46:29.623Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:29.623Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_valor\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:29.637Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:29.641Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method press"}
+{"level":30,"time":"2026-01-05T10:46:29.641Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_valor\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:29.660Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method press"}
+{"level":30,"time":"2026-01-05T10:46:29.664Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method focus"}
+{"level":30,"time":"2026-01-05T10:46:29.664Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_valor\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:29.675Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method focus"}
+{"level":30,"time":"2026-01-05T10:46:29.682Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_historia\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:29.681Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:29.699Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:29.704Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:29.704Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_nrepeat\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:29.719Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:29.724Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:29.724Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_natureplan\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:29.727Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:29.734Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:29.735Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_natureplan\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:29.739Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:29.742Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:29.742Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_natureplan\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:29.756Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:29.760Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method selectOption"}
+{"level":30,"time":"2026-01-05T10:46:29.760Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_natureplan\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:29.781Z","pid":6328,"hostname":"SAMSUNG","msg":"Option entries: 38"}
+{"level":30,"time":"2026-01-05T10:46:29.781Z","pid":6328,"hostname":"SAMSUNG","msg":"Selected entries: 1"}
+{"level":30,"time":"2026-01-05T10:46:29.781Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method selectOption"}
+{"level":30,"time":"2026-01-05T10:46:29.786Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method click"}
+{"level":30,"time":"2026-01-05T10:46:29.786Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"save-entity\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:29.831Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method click"}
+{"level":30,"time":"2026-01-05T10:46:29.841Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:29.841Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"page-heading\"]/span[contains(text(), \"Compromissos a Pagar- Cartão Mercado Pago \")] in page."}
+{"level":30,"time":"2026-01-05T10:46:29.894Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:29.926Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method goTo"}
+{"level":30,"time":"2026-01-05T10:46:30.059Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method goTo"}
+{"level":30,"time":"2026-01-05T10:46:30.071Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:30.071Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"page-heading\"]/span[contains(text(), \"Compromissos a Pagar- Cartão Mercado Pago \")] in page."}
+{"level":30,"time":"2026-01-05T10:46:30.188Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:30.195Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method click"}
+{"level":30,"time":"2026-01-05T10:46:30.195Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"jh-create-entity\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:30.271Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method click"}
+{"level":30,"time":"2026-01-05T10:46:30.276Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:30.276Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"jhi-commitment-heading\"][contains(text(), \"Criar ou editar Compromisso\")] in page."}
+{"level":30,"time":"2026-01-05T10:46:30.319Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:30.336Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:30.336Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_dia\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:30.348Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:30.354Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:30.354Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_valor\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:30.357Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:30.361Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:30.361Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_valor\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:30.384Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:30.388Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method clearText"}
+{"level":30,"time":"2026-01-05T10:46:30.388Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_valor\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:30.402Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method clearText"}
+{"level":30,"time":"2026-01-05T10:46:30.406Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:30.406Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_valor\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:30.416Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:30.422Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method press"}
+{"level":30,"time":"2026-01-05T10:46:30.423Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_valor\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:30.436Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method press"}
+{"level":30,"time":"2026-01-05T10:46:30.440Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method focus"}
+{"level":30,"time":"2026-01-05T10:46:30.440Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_valor\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:30.452Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method focus"}
+{"level":30,"time":"2026-01-05T10:46:30.457Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:30.457Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_historia\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:30.470Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:30.473Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:30.473Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_nrepeat\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:30.489Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-05T10:46:30.493Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:30.493Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_natureplan\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:30.497Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:30.504Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:30.504Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_natureplan\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:30.507Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:30.510Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:30.510Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_natureplan\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:30.522Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:30.525Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method selectOption"}
+{"level":30,"time":"2026-01-05T10:46:30.525Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"field_natureplan\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:30.543Z","pid":6328,"hostname":"SAMSUNG","msg":"Option entries: 38"}
+{"level":30,"time":"2026-01-05T10:46:30.543Z","pid":6328,"hostname":"SAMSUNG","msg":"Selected entries: 1"}
+{"level":30,"time":"2026-01-05T10:46:30.543Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method selectOption"}
+{"level":30,"time":"2026-01-05T10:46:30.550Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method click"}
+{"level":30,"time":"2026-01-05T10:46:30.550Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"save-entity\"] in page."}
+{"level":30,"time":"2026-01-05T10:46:30.624Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method click"}
+{"level":30,"time":"2026-01-05T10:46:30.641Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:30.641Z","pid":6328,"hostname":"SAMSUNG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"page-heading\"]/span[contains(text(), \"Compromissos a Pagar- Cartão Mercado Pago \")] in page."}
+{"level":30,"time":"2026-01-05T10:46:30.730Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-05T10:46:30.740Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2026-01-05T10:46:30.740Z","pid":6328,"hostname":"SAMSUNG","Take screenshot with options: ":{"path":"C:\\Users\\gestor\\Documents\\GitHub\\digitadorFatura\\browser\\screenshot\\robotframework-browser-screenshot-1.png","fileType":"png","fullPage":false,"timeout":20000,"omitBackground":false}}
+{"level":30,"time":"2026-01-05T10:46:31.026Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2026-01-05T10:46:31.031Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2026-01-05T10:46:31.060Z","pid":6328,"hostname":"SAMSUNG","msg":"Removed page=3182bb16-f2bd-46c1-9c05-eeb9c46f4b7a from context=9853d691-ca14-44de-ae1d-0fc52630d1cf page stack"}
+{"level":30,"time":"2026-01-05T10:46:31.441Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method closeBrowser"}
+{"level":30,"time":"2026-01-05T10:46:31.446Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-05T10:46:31.446Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\gestor\Documents\GitHub\digitadorFatura\venv\Lib\site-packages\Browser\wrapper\index.js:12672:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\gestor\Documents\GitHub\digitadorFatura\venv\Lib\site-packages\Browser\wrapper\index.js:13622:59)
+    at PlaywrightServer.setTimeout (C:\Users\gestor\Documents\GitHub\digitadorFatura\venv\Lib\site-packages\Browser\wrapper\index.js:13873:57)
+    at Object.onReceiveHalfClose (C:\Users\gestor\Documents\GitHub\digitadorFatura\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\gestor\Documents\GitHub\digitadorFatura\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\gestor\Documents\GitHub\digitadorFatura\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\gestor\Documents\GitHub\digitadorFatura\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:532:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2026-01-05T10:46:31.461Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-05T10:46:31.461Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-05T10:46:31.553Z","pid":6328,"hostname":"SAMSUNG","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2026-01-05T10:46:31.553Z","pid":6328,"hostname":"SAMSUNG","msg":"End of node method closeAllBrowsers"}

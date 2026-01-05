@@ -1,0 +1,2558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.11.0 on win32)" generated="2026-01-05T07:46:20.564321" rpa="false" schemaversion="5">
+<suite id="s1" name="Inserir Cartao" source="C:\Users\gestor\Documents\GitHub\digitadorFatura\jobs\inserir_cartao.robot">
+<test id="s1-t1" name="Abrir Página Robot Framework" line="195">
+<kw name="abrir pagina">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-01-05T07:46:21.304071" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\gestor\\Documents\\GitHub\\digitadorFatura\\browser\\traces\\temp\\cd2b8629-6a2d-4e61-94c7-08ba22ffdaab"}</msg>
+<msg time="2026-01-05T07:46:21.348566" level="INFO">Starting Browser process C:\Users\gestor\Documents\GitHub\digitadorFatura\venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:53537</msg>
+<msg time="2026-01-05T07:46:22.798390" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\gestor\\Documents\\GitHub\\digitadorFatura\\browser\\traces\\temp\\cd2b8629-6a2d-4e61-94c7-08ba22ffdaab"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-01-05T07:46:21.304071" elapsed="1.496333"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-01-05T07:46:23.604374" level="INFO">Successfully initialized new page object and opened url: http://localhost:8081/</msg>
+<msg time="2026-01-05T07:46:23.604374" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${PAGE}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-01-05T07:46:22.800404" elapsed="0.803970"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:23.658922" level="INFO">Waited for Element with selector xpath=/html/body/jhi-main/div[2]/div/jhi-home/div[2]/div/div/div/span[2] at state visible</msg>
+<arg>xpath=/html/body/jhi-main/div[2]/div/jhi-home/div[2]/div/div/div/span[2]</arg>
+<arg>visible</arg>
+<arg>timeout=20s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:23.605367" elapsed="0.058716"/>
+</kw>
+<status status="PASS" start="2026-01-05T07:46:21.304071" elapsed="2.361031"/>
+</kw>
+<kw name="tela de login">
+<kw name="Click" owner="Browser">
+<msg time="2026-01-05T07:46:23.669144" level="INFO">Clicks the element 'xpath=/html/body/jhi-main/div[2]/div/jhi-home/div[2]/div/div/div/a'.</msg>
+<arg>xpath=/html/body/jhi-main/div[2]/div/jhi-home/div[2]/div/div/div/a</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:23.665102" elapsed="0.100709"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:24.609134" level="INFO">Waited for Element with selector xpath=//*[@id="username"] at state visible</msg>
+<arg>xpath=//*[@id="username"]</arg>
+<arg>visible</arg>
+<arg>timeout=20s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:23.766815" elapsed="0.842319"/>
+</kw>
+<status status="PASS" start="2026-01-05T07:46:23.665102" elapsed="0.944032"/>
+</kw>
+<kw name="fazer login">
+<kw name="Set Browser Timeout" owner="Browser">
+<arg>20 s</arg>
+<tag>Config</tag>
+<tag>Setter</tag>
+<doc>Sets the timeout used by most input and getter keywords.</doc>
+<status status="PASS" start="2026-01-05T07:46:24.609134" elapsed="0.000000"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-05T07:46:24.609134" level="INFO">Fills the text 'chantal' in the given field.</msg>
+<arg>xpath=//*[@id="username"]</arg>
+<arg>chantal</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:24.609134" elapsed="0.036451"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-05T07:46:24.645585" level="INFO">Fills the text 'emdias@1911' in the given field.</msg>
+<arg>xpath=//*[@id="password"]</arg>
+<arg>emdias@1911</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:24.645585" elapsed="0.027552"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:24.699148" level="INFO">Waited for Element with selector id=empresa at state attached</msg>
+<arg>id=empresa</arg>
+<arg>attached</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:24.674130" elapsed="0.025360"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:24.708214" level="INFO">Waited for Element with selector id=empresa at state visible</msg>
+<arg>id=empresa</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:24.699490" elapsed="0.008724"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:24.726986" level="INFO">Waited for Element with selector id=empresa at state enabled</msg>
+<arg>id=empresa</arg>
+<arg>enabled</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:24.708214" elapsed="0.018772"/>
+</kw>
+<kw name="Select Options By" owner="Browser">
+<msg time="2026-01-05T07:46:24.726986" level="INFO">Selects the option(s) Financas Pessoais Edney by attribute SelectAttribute.label from element xpath=//*[@id="empresa"].</msg>
+<arg>xpath=//*[@id="empresa"]</arg>
+<arg>Label</arg>
+<arg>Financas Pessoais Edney</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:24.726986" elapsed="0.046032"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-01-05T07:46:24.774020" level="INFO">Clicks the element 'xpath=/html/body/jhi-main/div[2]/div/jhi-login/div/div/div/form/button'.</msg>
+<arg>xpath=/html/body/jhi-main/div[2]/div/jhi-login/div/div/div/form/button</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:24.774020" elapsed="0.083104"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:25.242764" level="INFO">Waited for Element with selector xpath=/html/body/jhi-main/div[2]/div/jhi-home/div[1]/div/jhi-shortcuts/div/div/a[1] at state visible</msg>
+<arg>xpath=/html/body/jhi-main/div[2]/div/jhi-home/div[1]/div/jhi-shortcuts/div/div/a[1]</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:24.857124" elapsed="0.385640"/>
+</kw>
+<status status="PASS" start="2026-01-05T07:46:24.609134" elapsed="0.633630"/>
+</kw>
+<kw name="entrar tela compromissos">
+<kw name="Click" owner="Browser">
+<msg time="2026-01-05T07:46:25.246324" level="INFO">Clicks the element 'xpath=/html/body/jhi-main/div[2]/div/jhi-home/div[1]/div/jhi-shortcuts/div/div/a[4]'.</msg>
+<arg>xpath=/html/body/jhi-main/div[2]/div/jhi-home/div[1]/div/jhi-shortcuts/div/div/a[4]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:25.244592" elapsed="0.088328"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:25.420148" level="INFO">Waited for Element with selector xpath=//*[@id="page-heading"]/span[1] at state visible</msg>
+<arg>xpath=//*[@id="page-heading"]/span[1]</arg>
+<arg>visible</arg>
+<arg>timeout=20s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:25.332920" elapsed="0.087228"/>
+</kw>
+<status status="PASS" start="2026-01-05T07:46:25.244592" elapsed="0.175556"/>
+</kw>
+<kw name="ler a planilha">
+<kw name="Open Workbook" owner="RPA.Excel.Files">
+<msg time="2026-01-05T07:46:25.559029" level="INFO">Opened workbook: &lt;RPA.Excel.Files.XlsxWorkbook object at 0x000002AFAE01AB90&gt;</msg>
+<arg>${arquivo}</arg>
+<doc>Open an existing Excel workbook.</doc>
+<status status="PASS" start="2026-01-05T07:46:25.422149" elapsed="0.136880"/>
+</kw>
+<kw name="Read Worksheet As Table" owner="RPA.Excel.Files">
+<msg time="2026-01-05T07:46:25.604406" level="INFO">Created table: Table(columns=['Data', 'Descrição', 'Valor', 'Categoria', 'Cartão', 'CategoriaId'], rows=6)</msg>
+<msg time="2026-01-05T07:46:25.604406" level="INFO">${dados} = Table(columns=['Data', 'Descrição', 'Valor', 'Categoria', 'Cartão', 'CategoriaId'], rows=6)</msg>
+<var>${dados}</var>
+<arg>header=True</arg>
+<arg>name=${sheet_name}</arg>
+<doc>Read the contents of a worksheet into a Table container. Allows
+sorting/filtering/manipulating using the ``RPA.Tables`` library.</doc>
+<status status="PASS" start="2026-01-05T07:46:25.559029" elapsed="0.045377"/>
+</kw>
+<kw name="Close Workbook" owner="RPA.Excel.Files">
+<msg time="2026-01-05T07:46:25.604406" level="INFO">Closing workbook: &lt;RPA.Excel.Files.XlsxWorkbook object at 0x000002AFAE01AB90&gt;</msg>
+<doc>Close the active workbook.</doc>
+<status status="PASS" start="2026-01-05T07:46:25.604406" elapsed="0.000000"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-05T07:46:25.612035" level="INFO">${data} = 31/12/2025</msg>
+<var>${data}</var>
+<arg>${row['Data']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-05T07:46:25.610237" elapsed="0.001798"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-05T07:46:25.612035" level="INFO">${valor} = 61.53</msg>
+<var>${valor}</var>
+<arg>${row['Valor']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-05T07:46:25.612035" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-05T07:46:25.612035" level="INFO">${historia} = G barbosa 081 - m</msg>
+<var>${historia}</var>
+<arg>${row['Descrição']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-05T07:46:25.612035" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-05T07:46:25.612035" level="INFO">${cartao} = Mercado Pago</msg>
+<var>${cartao}</var>
+<arg>${row['Cartão']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-05T07:46:25.612035" elapsed="0.000000"/>
+</kw>
+<kw name="Get Regexp Matches" owner="String">
+<msg time="2026-01-05T07:46:25.612035" level="INFO">${matches} = []</msg>
+<var>${matches}</var>
+<arg>${historia}</arg>
+<arg>(\\d{1,2})/(\\d{1,2})</arg>
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<status status="PASS" start="2026-01-05T07:46:25.612035" elapsed="0.000000"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2026-01-05T07:46:25.612035" level="INFO">Length is 0.</msg>
+<msg time="2026-01-05T07:46:25.612035" level="INFO">${tamanho} = 0</msg>
+<var>${tamanho}</var>
+<arg>${matches}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2026-01-05T07:46:25.612035" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="'${cartao}' == &quot;Carrefour Adriana&quot;">
+<kw name="abrir relatorio carrefour adriana">
+<status status="NOT RUN" start="2026-01-05T07:46:25.612035" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:25.612035" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Elo Cetelen&quot;">
+<kw name="abrir relatorio elo">
+<status status="NOT RUN" start="2026-01-05T07:46:25.612035" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:25.612035" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Mercado Pago Adriana&quot;">
+<kw name="abrir relatorio mercado pago adriana">
+<status status="NOT RUN" start="2026-01-05T07:46:25.612035" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:25.612035" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Mercado Pago&quot;">
+<kw name="abrir relatorio mercado pago">
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2026-01-05T07:46:25.612035" level="INFO">${url} = http://localhost:8081/commitment/person/5351/P</msg>
+<var>${url}</var>
+<arg>${PAGE}commitment/person/5351/P</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="PASS" start="2026-01-05T07:46:25.612035" elapsed="0.000000"/>
+</kw>
+<kw name="Go To" owner="Browser">
+<msg time="2026-01-05T07:46:26.072171" level="INFO">Successfully opened URL http://localhost:8081/commitment/person/5351/P</msg>
+<arg>${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2026-01-05T07:46:25.612035" elapsed="0.460136"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:26.242188" level="INFO">Waited for Element with selector xpath=//*[@id="page-heading"]/span[contains(text(), "Compromissos a Pagar- Cartão Mercado Pago ")] at state visible</msg>
+<arg>xpath=//*[@id="page-heading"]/span[contains(text(), "Compromissos a Pagar- Cartão Mercado Pago ")]</arg>
+<arg>visible</arg>
+<arg>timeout=20s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:26.073173" elapsed="0.169015"/>
+</kw>
+<status status="PASS" start="2026-01-05T07:46:25.612035" elapsed="0.630153"/>
+</kw>
+<status status="PASS" start="2026-01-05T07:46:25.612035" elapsed="0.630153"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Rener Adriana&quot;">
+<kw name="abrir relatorio renner adriana">
+<status status="NOT RUN" start="2026-01-05T07:46:26.245010" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:26.242188" elapsed="0.002822"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Itau Card&quot;">
+<kw name="abrir relatorio itau">
+<status status="NOT RUN" start="2026-01-05T07:46:26.246166" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:26.245010" elapsed="0.001156"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Carrefour&quot;">
+<kw name="abrir relatorio carrefour">
+<status status="NOT RUN" start="2026-01-05T07:46:26.247166" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:26.246166" elapsed="0.001000"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Casas Bahia&quot;">
+<kw name="abrir relatorio casas bahia">
+<status status="NOT RUN" start="2026-01-05T07:46:26.248163" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:26.247166" elapsed="0.000997"/>
+</branch>
+<status status="PASS" start="2026-01-05T07:46:25.612035" elapsed="0.637129"/>
+</if>
+<kw name="abrir formulario">
+<kw name="Click" owner="Browser">
+<msg time="2026-01-05T07:46:26.250162" level="INFO">Clicks the element 'xpath=//*[@id="jh-create-entity"]'.</msg>
+<arg>xpath=//*[@id="jh-create-entity"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:26.250162" elapsed="0.066812"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:26.385602" level="INFO">Waited for Element with selector xpath=//*[@id="jhi-commitment-heading"][contains(text(), "Criar ou editar Compromisso")] at state visible</msg>
+<arg>xpath=//*[@id="jhi-commitment-heading"][contains(text(), "Criar ou editar Compromisso")]</arg>
+<arg>visible</arg>
+<arg>timeout=20s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:26.316974" elapsed="0.068628"/>
+</kw>
+<status status="PASS" start="2026-01-05T07:46:26.249164" elapsed="0.137437"/>
+</kw>
+<if>
+<branch type="IF" condition="${tamanho} == 0">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-05T07:46:26.388001" level="INFO">${repeticao} = 0</msg>
+<var>${repeticao}</var>
+<arg>0</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-05T07:46:26.388001" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-01-05T07:46:26.386992" elapsed="0.001009"/>
+</branch>
+<branch type="ELSE">
+<kw name="Split String" owner="String">
+<var>${partes}</var>
+<arg>${matches[0]}</arg>
+<arg>/</arg>
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<status status="NOT RUN" start="2026-01-05T07:46:26.388991" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${repeticao}</var>
+<arg>${partes[1]}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2026-01-05T07:46:26.388991" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:26.388991" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2026-01-05T07:46:26.386601" elapsed="0.002390"/>
+</if>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-05T07:46:26.389993" level="INFO">${categoria} = Alimentacao</msg>
+<var>${categoria}</var>
+<arg>${row['Categoria']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-05T07:46:26.389993" elapsed="0.000000"/>
+</kw>
+<kw name="preencher formulario">
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-05T07:46:26.392998" level="INFO">Fills the text '31/12/2025' in the given field.</msg>
+<arg>xpath=//*[@id="field_dia"]</arg>
+<arg>${data}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:26.392002" elapsed="0.027408"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:26.428047" level="INFO">Waited for Element with selector xpath=//*[@id="field_valor"] at state visible</msg>
+<arg>xpath=//*[@id="field_valor"]</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:26.419410" elapsed="0.008637"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:26.450192" level="INFO">Waited for Element with selector xpath=//*[@id="field_valor"] at state editable</msg>
+<arg>xpath=//*[@id="field_valor"]</arg>
+<arg>editable</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:26.428047" elapsed="0.022145"/>
+</kw>
+<kw name="Clear Text" owner="Browser">
+<arg>xpath=//*[@id="field_valor"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:26.450192" elapsed="0.023190"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2026-01-05T07:46:26.474378" level="INFO">${texto} = 61.53</msg>
+<var>${texto}</var>
+<arg>${valor}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2026-01-05T07:46:26.474378" elapsed="0.000000"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2026-01-05T07:46:26.475374" level="INFO">${novo_valor} = 61,53</msg>
+<var>${novo_valor}</var>
+<arg>${texto}</arg>
+<arg>.</arg>
+<arg>,</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2026-01-05T07:46:26.474378" elapsed="0.000996"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-05T07:46:26.475374" level="INFO">Fills the text '61.53' in the given field.</msg>
+<arg>xpath=//*[@id="field_valor"]</arg>
+<arg>${texto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:26.475374" elapsed="0.020552"/>
+</kw>
+<kw name="Press Keys" owner="Browser">
+<arg>xpath=//*[@id="field_valor"]</arg>
+<arg>Tab</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given key combination into element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:26.495926" elapsed="0.014949"/>
+</kw>
+<kw name="Focus" owner="Browser">
+<arg>xpath=//*[@id="field_valor"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Moves focus on to the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:26.510875" elapsed="0.022474"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-05T07:46:26.534380" level="INFO">Fills the text 'G barbosa 081 - m' in the given field.</msg>
+<arg>xpath=//*[@id="field_historia"]</arg>
+<arg>${historia}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:26.533349" elapsed="0.011772"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-05T07:46:26.545121" level="INFO">Fills the text '0' in the given field.</msg>
+<arg>xpath=//*[@id="field_nrepeat"]</arg>
+<arg>${repeticao}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:26.545121" elapsed="0.026263"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:26.579158" level="INFO">Waited for Element with selector xpath=//*[@id="field_natureplan"] at state attached</msg>
+<arg>${XPATH_INPUT_CATEGORIA}</arg>
+<arg>attached</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:26.571384" elapsed="0.007774"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:26.579158" level="INFO">Waited for Element with selector xpath=//*[@id="field_natureplan"] at state visible</msg>
+<arg>${XPATH_INPUT_CATEGORIA}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:26.579158" elapsed="0.000000"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:26.592565" level="INFO">Waited for Element with selector xpath=//*[@id="field_natureplan"] at state enabled</msg>
+<arg>${XPATH_INPUT_CATEGORIA}</arg>
+<arg>enabled</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:26.579158" elapsed="0.013407"/>
+</kw>
+<kw name="Select Options By" owner="Browser">
+<msg time="2026-01-05T07:46:26.592565" level="INFO">Selects the option(s) Alimentacao by attribute SelectAttribute.label from element xpath=//*[@id="field_natureplan"].</msg>
+<arg>${XPATH_INPUT_CATEGORIA}</arg>
+<arg>Label</arg>
+<arg>${categoria}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:26.592565" elapsed="0.037339"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-01-05T07:46:26.629904" level="INFO">Clicks the element 'xpath=//*[@id="save-entity"]'.</msg>
+<arg>xpath=//*[@id="save-entity"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:26.629904" elapsed="0.085439"/>
+</kw>
+<if>
+<branch type="IF" condition="'${cartao}' == &quot;Carrefour Adriana&quot;">
+<kw name="espera relatorio carrefour adriana">
+<status status="NOT RUN" start="2026-01-05T07:46:26.715343" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:26.715343" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Elo Cetelen&quot;">
+<kw name="espera relatorio elo">
+<status status="NOT RUN" start="2026-01-05T07:46:26.715343" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:26.715343" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Mercado Pago Adriana&quot;">
+<kw name="espera relatorio mercado pago adriana">
+<status status="NOT RUN" start="2026-01-05T07:46:26.715343" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:26.715343" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Mercado Pago&quot;">
+<kw name="espera relatorio mercado pago">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:26.787848" level="INFO">Waited for Element with selector xpath=//*[@id="page-heading"]/span[contains(text(), "Compromissos a Pagar- Cartão Mercado Pago ")] at state visible</msg>
+<arg>xpath=//*[@id="page-heading"]/span[contains(text(), "Compromissos a Pagar- Cartão Mercado Pago ")]</arg>
+<arg>visible</arg>
+<arg>timeout=20s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:26.715343" elapsed="0.072505"/>
+</kw>
+<status status="PASS" start="2026-01-05T07:46:26.715343" elapsed="0.072505"/>
+</kw>
+<status status="PASS" start="2026-01-05T07:46:26.715343" elapsed="0.072505"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Rener Adriana&quot;">
+<kw name="espera relatorio renner adriana">
+<status status="NOT RUN" start="2026-01-05T07:46:26.789066" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:26.787848" elapsed="0.001218"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Itau Card&quot;">
+<kw name="espera relatorio itau">
+<status status="NOT RUN" start="2026-01-05T07:46:26.790068" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:26.789066" elapsed="0.001002"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Carrefour&quot;">
+<kw name="espera relatorio carrefour">
+<status status="NOT RUN" start="2026-01-05T07:46:26.790068" elapsed="0.001014"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:26.790068" elapsed="0.001014"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Casas Bahia&quot;">
+<kw name="espera relatorio casa bahia">
+<status status="NOT RUN" start="2026-01-05T07:46:26.791082" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:26.791082" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2026-01-05T07:46:26.715343" elapsed="0.076751"/>
+</if>
+<arg>${data}</arg>
+<arg>${valor}</arg>
+<arg>${historia}</arg>
+<arg>${repeticao}</arg>
+<arg>${categoria}</arg>
+<arg>${cartao}</arg>
+<status status="PASS" start="2026-01-05T07:46:26.391001" elapsed="0.401093"/>
+</kw>
+<var name="${row}">{'Data': '31/12/2025', 'Descrição': 'G barbosa 081 - m', 'Valor': 61.53, 'Categoria': 'Alimentacao', 'Cartão': 'Mercado Pago', 'CategoriaId': None}</var>
+<status status="PASS" start="2026-01-05T07:46:25.604406" elapsed="1.187688"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-05T07:46:26.794538" level="INFO">${data} = 31/12/2025</msg>
+<var>${data}</var>
+<arg>${row['Data']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-05T07:46:26.793083" elapsed="0.001455"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-05T07:46:26.800145" level="INFO">${valor} = 19.9</msg>
+<var>${valor}</var>
+<arg>${row['Valor']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-05T07:46:26.796808" elapsed="0.003337"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-05T07:46:26.802170" level="INFO">${historia} = G barbosa 081 - m 1/3</msg>
+<var>${historia}</var>
+<arg>${row['Descrição']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-05T07:46:26.800145" elapsed="0.002025"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-05T07:46:26.804194" level="INFO">${cartao} = Mercado Pago</msg>
+<var>${cartao}</var>
+<arg>${row['Cartão']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-05T07:46:26.802170" elapsed="0.002024"/>
+</kw>
+<kw name="Get Regexp Matches" owner="String">
+<msg time="2026-01-05T07:46:26.805214" level="INFO">${matches} = ['1/3']</msg>
+<var>${matches}</var>
+<arg>${historia}</arg>
+<arg>(\\d{1,2})/(\\d{1,2})</arg>
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<status status="PASS" start="2026-01-05T07:46:26.804194" elapsed="0.001020"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2026-01-05T07:46:26.805214" level="INFO">Length is 1.</msg>
+<msg time="2026-01-05T07:46:26.805214" level="INFO">${tamanho} = 1</msg>
+<var>${tamanho}</var>
+<arg>${matches}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2026-01-05T07:46:26.805214" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="'${cartao}' == &quot;Carrefour Adriana&quot;">
+<kw name="abrir relatorio carrefour adriana">
+<status status="NOT RUN" start="2026-01-05T07:46:26.805214" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:26.805214" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Elo Cetelen&quot;">
+<kw name="abrir relatorio elo">
+<status status="NOT RUN" start="2026-01-05T07:46:26.805214" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:26.805214" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Mercado Pago Adriana&quot;">
+<kw name="abrir relatorio mercado pago adriana">
+<status status="NOT RUN" start="2026-01-05T07:46:26.805214" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:26.805214" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Mercado Pago&quot;">
+<kw name="abrir relatorio mercado pago">
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2026-01-05T07:46:26.810021" level="INFO">${url} = http://localhost:8081/commitment/person/5351/P</msg>
+<var>${url}</var>
+<arg>${PAGE}commitment/person/5351/P</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="PASS" start="2026-01-05T07:46:26.810021" elapsed="0.000000"/>
+</kw>
+<kw name="Go To" owner="Browser">
+<msg time="2026-01-05T07:46:26.921855" level="INFO">Successfully opened URL http://localhost:8081/commitment/person/5351/P</msg>
+<arg>${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2026-01-05T07:46:26.810021" elapsed="0.111834"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:26.985817" level="INFO">Waited for Element with selector xpath=//*[@id="page-heading"]/span[contains(text(), "Compromissos a Pagar- Cartão Mercado Pago ")] at state visible</msg>
+<arg>xpath=//*[@id="page-heading"]/span[contains(text(), "Compromissos a Pagar- Cartão Mercado Pago ")]</arg>
+<arg>visible</arg>
+<arg>timeout=20s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:26.921855" elapsed="0.063962"/>
+</kw>
+<status status="PASS" start="2026-01-05T07:46:26.805214" elapsed="0.180603"/>
+</kw>
+<status status="PASS" start="2026-01-05T07:46:26.805214" elapsed="0.180603"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Rener Adriana&quot;">
+<kw name="abrir relatorio renner adriana">
+<status status="NOT RUN" start="2026-01-05T07:46:26.985817" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:26.985817" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Itau Card&quot;">
+<kw name="abrir relatorio itau">
+<status status="NOT RUN" start="2026-01-05T07:46:26.985817" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:26.985817" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Carrefour&quot;">
+<kw name="abrir relatorio carrefour">
+<status status="NOT RUN" start="2026-01-05T07:46:26.985817" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:26.985817" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Casas Bahia&quot;">
+<kw name="abrir relatorio casas bahia">
+<status status="NOT RUN" start="2026-01-05T07:46:26.985817" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:26.985817" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2026-01-05T07:46:26.805214" elapsed="0.180603"/>
+</if>
+<kw name="abrir formulario">
+<kw name="Click" owner="Browser">
+<msg time="2026-01-05T07:46:26.985817" level="INFO">Clicks the element 'xpath=//*[@id="jh-create-entity"]'.</msg>
+<arg>xpath=//*[@id="jh-create-entity"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:26.985817" elapsed="0.111204"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:27.160904" level="INFO">Waited for Element with selector xpath=//*[@id="jhi-commitment-heading"][contains(text(), "Criar ou editar Compromisso")] at state visible</msg>
+<arg>xpath=//*[@id="jhi-commitment-heading"][contains(text(), "Criar ou editar Compromisso")]</arg>
+<arg>visible</arg>
+<arg>timeout=20s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:27.097021" elapsed="0.063883"/>
+</kw>
+<status status="PASS" start="2026-01-05T07:46:26.985817" elapsed="0.175087"/>
+</kw>
+<if>
+<branch type="IF" condition="${tamanho} == 0">
+<kw name="Set Variable" owner="BuiltIn">
+<var>${repeticao}</var>
+<arg>0</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2026-01-05T07:46:27.160904" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:27.160904" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE">
+<kw name="Split String" owner="String">
+<msg time="2026-01-05T07:46:27.160904" level="INFO">${partes} = ['1', '3']</msg>
+<var>${partes}</var>
+<arg>${matches[0]}</arg>
+<arg>/</arg>
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<status status="PASS" start="2026-01-05T07:46:27.160904" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-05T07:46:27.160904" level="INFO">${repeticao} = 3</msg>
+<var>${repeticao}</var>
+<arg>${partes[1]}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-05T07:46:27.160904" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-01-05T07:46:27.160904" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2026-01-05T07:46:27.160904" elapsed="0.000000"/>
+</if>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-05T07:46:27.160904" level="INFO">${categoria} = Eletrônicos e Moveis</msg>
+<var>${categoria}</var>
+<arg>${row['Categoria']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-05T07:46:27.160904" elapsed="0.000000"/>
+</kw>
+<kw name="preencher formulario">
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-05T07:46:27.160904" level="INFO">Fills the text '31/12/2025' in the given field.</msg>
+<arg>xpath=//*[@id="field_dia"]</arg>
+<arg>${data}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:27.160904" elapsed="0.024332"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:27.197414" level="INFO">Waited for Element with selector xpath=//*[@id="field_valor"] at state visible</msg>
+<arg>xpath=//*[@id="field_valor"]</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:27.185236" elapsed="0.012178"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:27.233864" level="INFO">Waited for Element with selector xpath=//*[@id="field_valor"] at state editable</msg>
+<arg>xpath=//*[@id="field_valor"]</arg>
+<arg>editable</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:27.197414" elapsed="0.036450"/>
+</kw>
+<kw name="Clear Text" owner="Browser">
+<arg>xpath=//*[@id="field_valor"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:27.233864" elapsed="0.013524"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2026-01-05T07:46:27.247388" level="INFO">${texto} = 19.9</msg>
+<var>${texto}</var>
+<arg>${valor}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2026-01-05T07:46:27.247388" elapsed="0.000000"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2026-01-05T07:46:27.247388" level="INFO">${novo_valor} = 19,9</msg>
+<var>${novo_valor}</var>
+<arg>${texto}</arg>
+<arg>.</arg>
+<arg>,</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2026-01-05T07:46:27.247388" elapsed="0.000000"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-05T07:46:27.247388" level="INFO">Fills the text '19.9' in the given field.</msg>
+<arg>xpath=//*[@id="field_valor"]</arg>
+<arg>${texto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:27.247388" elapsed="0.018933"/>
+</kw>
+<kw name="Press Keys" owner="Browser">
+<arg>xpath=//*[@id="field_valor"]</arg>
+<arg>Tab</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given key combination into element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:27.266321" elapsed="0.011284"/>
+</kw>
+<kw name="Focus" owner="Browser">
+<arg>xpath=//*[@id="field_valor"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Moves focus on to the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:27.277605" elapsed="0.017037"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-05T07:46:27.296661" level="INFO">Fills the text 'G barbosa 081 - m 1/3' in the given field.</msg>
+<arg>xpath=//*[@id="field_historia"]</arg>
+<arg>${historia}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:27.294642" elapsed="0.021190"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-05T07:46:27.315832" level="INFO">Fills the text '3' in the given field.</msg>
+<arg>xpath=//*[@id="field_nrepeat"]</arg>
+<arg>${repeticao}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:27.315832" elapsed="0.011991"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:27.337931" level="INFO">Waited for Element with selector xpath=//*[@id="field_natureplan"] at state attached</msg>
+<arg>${XPATH_INPUT_CATEGORIA}</arg>
+<arg>attached</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:27.327823" elapsed="0.015181"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:27.349239" level="INFO">Waited for Element with selector xpath=//*[@id="field_natureplan"] at state visible</msg>
+<arg>${XPATH_INPUT_CATEGORIA}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:27.343004" elapsed="0.006235"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:27.367246" level="INFO">Waited for Element with selector xpath=//*[@id="field_natureplan"] at state enabled</msg>
+<arg>${XPATH_INPUT_CATEGORIA}</arg>
+<arg>enabled</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:27.349239" elapsed="0.018007"/>
+</kw>
+<kw name="Select Options By" owner="Browser">
+<msg time="2026-01-05T07:46:27.368305" level="INFO">Selects the option(s) Eletrônicos e Moveis by attribute SelectAttribute.label from element xpath=//*[@id="field_natureplan"].</msg>
+<arg>${XPATH_INPUT_CATEGORIA}</arg>
+<arg>Label</arg>
+<arg>${categoria}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:27.367246" elapsed="0.010405"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-01-05T07:46:27.377651" level="INFO">Clicks the element 'xpath=//*[@id="save-entity"]'.</msg>
+<arg>xpath=//*[@id="save-entity"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:27.377651" elapsed="0.099910"/>
+</kw>
+<if>
+<branch type="IF" condition="'${cartao}' == &quot;Carrefour Adriana&quot;">
+<kw name="espera relatorio carrefour adriana">
+<status status="NOT RUN" start="2026-01-05T07:46:27.480771" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:27.477561" elapsed="0.003210"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Elo Cetelen&quot;">
+<kw name="espera relatorio elo">
+<status status="NOT RUN" start="2026-01-05T07:46:27.480771" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:27.480771" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Mercado Pago Adriana&quot;">
+<kw name="espera relatorio mercado pago adriana">
+<status status="NOT RUN" start="2026-01-05T07:46:27.480771" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:27.480771" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Mercado Pago&quot;">
+<kw name="espera relatorio mercado pago">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:27.546428" level="INFO">Waited for Element with selector xpath=//*[@id="page-heading"]/span[contains(text(), "Compromissos a Pagar- Cartão Mercado Pago ")] at state visible</msg>
+<arg>xpath=//*[@id="page-heading"]/span[contains(text(), "Compromissos a Pagar- Cartão Mercado Pago ")]</arg>
+<arg>visible</arg>
+<arg>timeout=20s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:27.480771" elapsed="0.065657"/>
+</kw>
+<status status="PASS" start="2026-01-05T07:46:27.480771" elapsed="0.066678"/>
+</kw>
+<status status="PASS" start="2026-01-05T07:46:27.480771" elapsed="0.067677"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Rener Adriana&quot;">
+<kw name="espera relatorio renner adriana">
+<status status="NOT RUN" start="2026-01-05T07:46:27.549411" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:27.548448" elapsed="0.000963"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Itau Card&quot;">
+<kw name="espera relatorio itau">
+<status status="NOT RUN" start="2026-01-05T07:46:27.551450" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:27.550418" elapsed="0.001032"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Carrefour&quot;">
+<kw name="espera relatorio carrefour">
+<status status="NOT RUN" start="2026-01-05T07:46:27.552411" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:27.551450" elapsed="0.000961"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Casas Bahia&quot;">
+<kw name="espera relatorio casa bahia">
+<status status="NOT RUN" start="2026-01-05T07:46:27.552411" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:27.552411" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2026-01-05T07:46:27.477561" elapsed="0.075857"/>
+</if>
+<arg>${data}</arg>
+<arg>${valor}</arg>
+<arg>${historia}</arg>
+<arg>${repeticao}</arg>
+<arg>${categoria}</arg>
+<arg>${cartao}</arg>
+<status status="PASS" start="2026-01-05T07:46:27.160904" elapsed="0.392514"/>
+</kw>
+<var name="${row}">{'Data': '31/12/2025', 'Descrição': 'G barbosa 081 - m 1/3', 'Valor': 19.9, 'Categoria': 'Eletrônicos e Moveis', 'Cartão': 'Mercado Pago', 'CategoriaId': None}</var>
+<status status="PASS" start="2026-01-05T07:46:26.793083" elapsed="0.760335"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-05T07:46:27.556386" level="INFO">${data} = 31/12/2025</msg>
+<var>${data}</var>
+<arg>${row['Data']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-05T07:46:27.554456" elapsed="0.001930"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-05T07:46:27.557642" level="INFO">${valor} = 93.2</msg>
+<var>${valor}</var>
+<arg>${row['Valor']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-05T07:46:27.556386" elapsed="0.001256"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-05T07:46:27.558711" level="INFO">${historia} = Quitandaria</msg>
+<var>${historia}</var>
+<arg>${row['Descrição']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-05T07:46:27.557642" elapsed="0.001069"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-05T07:46:27.560684" level="INFO">${cartao} = Mercado Pago</msg>
+<var>${cartao}</var>
+<arg>${row['Cartão']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-05T07:46:27.559689" elapsed="0.000995"/>
+</kw>
+<kw name="Get Regexp Matches" owner="String">
+<msg time="2026-01-05T07:46:27.562726" level="INFO">${matches} = []</msg>
+<var>${matches}</var>
+<arg>${historia}</arg>
+<arg>(\\d{1,2})/(\\d{1,2})</arg>
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<status status="PASS" start="2026-01-05T07:46:27.561684" elapsed="0.001042"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2026-01-05T07:46:27.564680" level="INFO">Length is 0.</msg>
+<msg time="2026-01-05T07:46:27.564680" level="INFO">${tamanho} = 0</msg>
+<var>${tamanho}</var>
+<arg>${matches}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2026-01-05T07:46:27.563751" elapsed="0.000929"/>
+</kw>
+<if>
+<branch type="IF" condition="'${cartao}' == &quot;Carrefour Adriana&quot;">
+<kw name="abrir relatorio carrefour adriana">
+<status status="NOT RUN" start="2026-01-05T07:46:27.565682" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:27.564680" elapsed="0.001002"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Elo Cetelen&quot;">
+<kw name="abrir relatorio elo">
+<status status="NOT RUN" start="2026-01-05T07:46:27.566683" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:27.565682" elapsed="0.001001"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Mercado Pago Adriana&quot;">
+<kw name="abrir relatorio mercado pago adriana">
+<status status="NOT RUN" start="2026-01-05T07:46:27.567698" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:27.566683" elapsed="0.001015"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Mercado Pago&quot;">
+<kw name="abrir relatorio mercado pago">
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2026-01-05T07:46:27.569680" level="INFO">${url} = http://localhost:8081/commitment/person/5351/P</msg>
+<var>${url}</var>
+<arg>${PAGE}commitment/person/5351/P</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="PASS" start="2026-01-05T07:46:27.569680" elapsed="0.000000"/>
+</kw>
+<kw name="Go To" owner="Browser">
+<msg time="2026-01-05T07:46:27.687095" level="INFO">Successfully opened URL http://localhost:8081/commitment/person/5351/P</msg>
+<arg>${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2026-01-05T07:46:27.569680" elapsed="0.117415"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:27.767488" level="INFO">Waited for Element with selector xpath=//*[@id="page-heading"]/span[contains(text(), "Compromissos a Pagar- Cartão Mercado Pago ")] at state visible</msg>
+<arg>xpath=//*[@id="page-heading"]/span[contains(text(), "Compromissos a Pagar- Cartão Mercado Pago ")]</arg>
+<arg>visible</arg>
+<arg>timeout=20s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:27.687095" elapsed="0.080393"/>
+</kw>
+<status status="PASS" start="2026-01-05T07:46:27.568679" elapsed="0.198809"/>
+</kw>
+<status status="PASS" start="2026-01-05T07:46:27.567698" elapsed="0.199790"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Rener Adriana&quot;">
+<kw name="abrir relatorio renner adriana">
+<status status="NOT RUN" start="2026-01-05T07:46:27.768454" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:27.767488" elapsed="0.000966"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Itau Card&quot;">
+<kw name="abrir relatorio itau">
+<status status="NOT RUN" start="2026-01-05T07:46:27.769451" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:27.768454" elapsed="0.000997"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Carrefour&quot;">
+<kw name="abrir relatorio carrefour">
+<status status="NOT RUN" start="2026-01-05T07:46:27.770491" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:27.769451" elapsed="0.001040"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Casas Bahia&quot;">
+<kw name="abrir relatorio casas bahia">
+<status status="NOT RUN" start="2026-01-05T07:46:27.770491" elapsed="0.001000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:27.770491" elapsed="0.001000"/>
+</branch>
+<status status="PASS" start="2026-01-05T07:46:27.564680" elapsed="0.206811"/>
+</if>
+<kw name="abrir formulario">
+<kw name="Click" owner="Browser">
+<msg time="2026-01-05T07:46:27.773511" level="INFO">Clicks the element 'xpath=//*[@id="jh-create-entity"]'.</msg>
+<arg>xpath=//*[@id="jh-create-entity"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:27.772453" elapsed="0.088797"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:27.927555" level="INFO">Waited for Element with selector xpath=//*[@id="jhi-commitment-heading"][contains(text(), "Criar ou editar Compromisso")] at state visible</msg>
+<arg>xpath=//*[@id="jhi-commitment-heading"][contains(text(), "Criar ou editar Compromisso")]</arg>
+<arg>visible</arg>
+<arg>timeout=20s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:27.861250" elapsed="0.066305"/>
+</kw>
+<status status="PASS" start="2026-01-05T07:46:27.771491" elapsed="0.156064"/>
+</kw>
+<if>
+<branch type="IF" condition="${tamanho} == 0">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-05T07:46:27.927555" level="INFO">${repeticao} = 0</msg>
+<var>${repeticao}</var>
+<arg>0</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-05T07:46:27.927555" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-01-05T07:46:27.927555" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE">
+<kw name="Split String" owner="String">
+<var>${partes}</var>
+<arg>${matches[0]}</arg>
+<arg>/</arg>
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<status status="NOT RUN" start="2026-01-05T07:46:27.927555" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${repeticao}</var>
+<arg>${partes[1]}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2026-01-05T07:46:27.927555" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:27.927555" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2026-01-05T07:46:27.927555" elapsed="0.000000"/>
+</if>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-05T07:46:27.927555" level="INFO">${categoria} = Alimentacao</msg>
+<var>${categoria}</var>
+<arg>${row['Categoria']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-05T07:46:27.927555" elapsed="0.000000"/>
+</kw>
+<kw name="preencher formulario">
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-05T07:46:27.927555" level="INFO">Fills the text '31/12/2025' in the given field.</msg>
+<arg>xpath=//*[@id="field_dia"]</arg>
+<arg>${data}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:27.927555" elapsed="0.029024"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:27.968843" level="INFO">Waited for Element with selector xpath=//*[@id="field_valor"] at state visible</msg>
+<arg>xpath=//*[@id="field_valor"]</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:27.956579" elapsed="0.012264"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:27.998231" level="INFO">Waited for Element with selector xpath=//*[@id="field_valor"] at state editable</msg>
+<arg>xpath=//*[@id="field_valor"]</arg>
+<arg>editable</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:27.968843" elapsed="0.029388"/>
+</kw>
+<kw name="Clear Text" owner="Browser">
+<arg>xpath=//*[@id="field_valor"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:27.998231" elapsed="0.020537"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2026-01-05T07:46:28.018768" level="INFO">${texto} = 93.2</msg>
+<var>${texto}</var>
+<arg>${valor}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2026-01-05T07:46:28.018768" elapsed="0.000000"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2026-01-05T07:46:28.020777" level="INFO">${novo_valor} = 93,2</msg>
+<var>${novo_valor}</var>
+<arg>${texto}</arg>
+<arg>.</arg>
+<arg>,</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2026-01-05T07:46:28.020777" elapsed="0.000000"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-05T07:46:28.020777" level="INFO">Fills the text '93.2' in the given field.</msg>
+<arg>xpath=//*[@id="field_valor"]</arg>
+<arg>${texto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:28.020777" elapsed="0.006972"/>
+</kw>
+<kw name="Press Keys" owner="Browser">
+<arg>xpath=//*[@id="field_valor"]</arg>
+<arg>Tab</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given key combination into element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:28.027749" elapsed="0.031633"/>
+</kw>
+<kw name="Focus" owner="Browser">
+<arg>xpath=//*[@id="field_valor"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Moves focus on to the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:28.060317" elapsed="0.019562"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-05T07:46:28.081917" level="INFO">Fills the text 'Quitandaria' in the given field.</msg>
+<arg>xpath=//*[@id="field_historia"]</arg>
+<arg>${historia}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:28.079879" elapsed="0.019535"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-05T07:46:28.101424" level="INFO">Fills the text '0' in the given field.</msg>
+<arg>xpath=//*[@id="field_nrepeat"]</arg>
+<arg>${repeticao}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:28.101424" elapsed="0.011328"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:28.131289" level="INFO">Waited for Element with selector xpath=//*[@id="field_natureplan"] at state attached</msg>
+<arg>${XPATH_INPUT_CATEGORIA}</arg>
+<arg>attached</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:28.112752" elapsed="0.018537"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:28.139356" level="INFO">Waited for Element with selector xpath=//*[@id="field_natureplan"] at state visible</msg>
+<arg>${XPATH_INPUT_CATEGORIA}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:28.131289" elapsed="0.008067"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:28.160719" level="INFO">Waited for Element with selector xpath=//*[@id="field_natureplan"] at state enabled</msg>
+<arg>${XPATH_INPUT_CATEGORIA}</arg>
+<arg>enabled</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:28.139356" elapsed="0.021363"/>
+</kw>
+<kw name="Select Options By" owner="Browser">
+<msg time="2026-01-05T07:46:28.160719" level="INFO">Selects the option(s) Alimentacao by attribute SelectAttribute.label from element xpath=//*[@id="field_natureplan"].</msg>
+<arg>${XPATH_INPUT_CATEGORIA}</arg>
+<arg>Label</arg>
+<arg>${categoria}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:28.160719" elapsed="0.016644"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-01-05T07:46:28.177363" level="INFO">Clicks the element 'xpath=//*[@id="save-entity"]'.</msg>
+<arg>xpath=//*[@id="save-entity"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:28.177363" elapsed="0.084252"/>
+</kw>
+<if>
+<branch type="IF" condition="'${cartao}' == &quot;Carrefour Adriana&quot;">
+<kw name="espera relatorio carrefour adriana">
+<status status="NOT RUN" start="2026-01-05T07:46:28.261615" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:28.261615" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Elo Cetelen&quot;">
+<kw name="espera relatorio elo">
+<status status="NOT RUN" start="2026-01-05T07:46:28.261615" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:28.261615" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Mercado Pago Adriana&quot;">
+<kw name="espera relatorio mercado pago adriana">
+<status status="NOT RUN" start="2026-01-05T07:46:28.261615" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:28.261615" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Mercado Pago&quot;">
+<kw name="espera relatorio mercado pago">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:28.339194" level="INFO">Waited for Element with selector xpath=//*[@id="page-heading"]/span[contains(text(), "Compromissos a Pagar- Cartão Mercado Pago ")] at state visible</msg>
+<arg>xpath=//*[@id="page-heading"]/span[contains(text(), "Compromissos a Pagar- Cartão Mercado Pago ")]</arg>
+<arg>visible</arg>
+<arg>timeout=20s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:28.261615" elapsed="0.078588"/>
+</kw>
+<status status="PASS" start="2026-01-05T07:46:28.261615" elapsed="0.078588"/>
+</kw>
+<status status="PASS" start="2026-01-05T07:46:28.261615" elapsed="0.078588"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Rener Adriana&quot;">
+<kw name="espera relatorio renner adriana">
+<status status="NOT RUN" start="2026-01-05T07:46:28.341190" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:28.341190" elapsed="0.000992"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Itau Card&quot;">
+<kw name="espera relatorio itau">
+<status status="NOT RUN" start="2026-01-05T07:46:28.342182" elapsed="0.001001"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:28.342182" elapsed="0.002001"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Carrefour&quot;">
+<kw name="espera relatorio carrefour">
+<status status="NOT RUN" start="2026-01-05T07:46:28.344643" elapsed="0.001110"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:28.344183" elapsed="0.001570"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Casas Bahia&quot;">
+<kw name="espera relatorio casa bahia">
+<status status="NOT RUN" start="2026-01-05T07:46:28.346720" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:28.345753" elapsed="0.001973"/>
+</branch>
+<status status="PASS" start="2026-01-05T07:46:28.261615" elapsed="0.087143"/>
+</if>
+<arg>${data}</arg>
+<arg>${valor}</arg>
+<arg>${historia}</arg>
+<arg>${repeticao}</arg>
+<arg>${categoria}</arg>
+<arg>${cartao}</arg>
+<status status="PASS" start="2026-01-05T07:46:27.927555" elapsed="0.421203"/>
+</kw>
+<var name="${row}">{'Data': '31/12/2025', 'Descrição': 'Quitandaria', 'Valor': 93.2, 'Categoria': 'Alimentacao', 'Cartão': 'Mercado Pago', 'CategoriaId': None}</var>
+<status status="PASS" start="2026-01-05T07:46:27.553418" elapsed="0.795340"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-05T07:46:28.351726" level="INFO">${data} = 31/12/2025</msg>
+<var>${data}</var>
+<arg>${row['Data']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-05T07:46:28.350731" elapsed="0.000995"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-05T07:46:28.353728" level="INFO">${valor} = 194.73</msg>
+<var>${valor}</var>
+<arg>${row['Valor']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-05T07:46:28.352736" elapsed="0.000992"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-05T07:46:28.355734" level="INFO">${historia} = Postoviamare</msg>
+<var>${historia}</var>
+<arg>${row['Descrição']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-05T07:46:28.353728" elapsed="0.002006"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-05T07:46:28.356731" level="INFO">${cartao} = Mercado Pago</msg>
+<var>${cartao}</var>
+<arg>${row['Cartão']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-05T07:46:28.355734" elapsed="0.000997"/>
+</kw>
+<kw name="Get Regexp Matches" owner="String">
+<msg time="2026-01-05T07:46:28.357730" level="INFO">${matches} = []</msg>
+<var>${matches}</var>
+<arg>${historia}</arg>
+<arg>(\\d{1,2})/(\\d{1,2})</arg>
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<status status="PASS" start="2026-01-05T07:46:28.357730" elapsed="0.000000"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2026-01-05T07:46:28.358736" level="INFO">Length is 0.</msg>
+<msg time="2026-01-05T07:46:28.358736" level="INFO">${tamanho} = 0</msg>
+<var>${tamanho}</var>
+<arg>${matches}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2026-01-05T07:46:28.358736" elapsed="0.000993"/>
+</kw>
+<if>
+<branch type="IF" condition="'${cartao}' == &quot;Carrefour Adriana&quot;">
+<kw name="abrir relatorio carrefour adriana">
+<status status="NOT RUN" start="2026-01-05T07:46:28.360065" elapsed="0.001192"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:28.360065" elapsed="0.001192"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Elo Cetelen&quot;">
+<kw name="abrir relatorio elo">
+<status status="NOT RUN" start="2026-01-05T07:46:28.362260" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:28.361257" elapsed="0.001003"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Mercado Pago Adriana&quot;">
+<kw name="abrir relatorio mercado pago adriana">
+<status status="NOT RUN" start="2026-01-05T07:46:28.363254" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:28.362260" elapsed="0.000994"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Mercado Pago&quot;">
+<kw name="abrir relatorio mercado pago">
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2026-01-05T07:46:28.365265" level="INFO">${url} = http://localhost:8081/commitment/person/5351/P</msg>
+<var>${url}</var>
+<arg>${PAGE}commitment/person/5351/P</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="PASS" start="2026-01-05T07:46:28.365265" elapsed="0.000000"/>
+</kw>
+<kw name="Go To" owner="Browser">
+<msg time="2026-01-05T07:46:28.487265" level="INFO">Successfully opened URL http://localhost:8081/commitment/person/5351/P</msg>
+<arg>${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2026-01-05T07:46:28.365265" elapsed="0.122000"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:28.599920" level="INFO">Waited for Element with selector xpath=//*[@id="page-heading"]/span[contains(text(), "Compromissos a Pagar- Cartão Mercado Pago ")] at state visible</msg>
+<arg>xpath=//*[@id="page-heading"]/span[contains(text(), "Compromissos a Pagar- Cartão Mercado Pago ")]</arg>
+<arg>visible</arg>
+<arg>timeout=20s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:28.487265" elapsed="0.112655"/>
+</kw>
+<status status="PASS" start="2026-01-05T07:46:28.364266" elapsed="0.235654"/>
+</kw>
+<status status="PASS" start="2026-01-05T07:46:28.363254" elapsed="0.236666"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Rener Adriana&quot;">
+<kw name="abrir relatorio renner adriana">
+<status status="NOT RUN" start="2026-01-05T07:46:28.600913" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:28.599920" elapsed="0.000993"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Itau Card&quot;">
+<kw name="abrir relatorio itau">
+<status status="NOT RUN" start="2026-01-05T07:46:28.600913" elapsed="0.001003"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:28.600913" elapsed="0.001003"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Carrefour&quot;">
+<kw name="abrir relatorio carrefour">
+<status status="NOT RUN" start="2026-01-05T07:46:28.601916" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:28.601916" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Casas Bahia&quot;">
+<kw name="abrir relatorio casas bahia">
+<status status="NOT RUN" start="2026-01-05T07:46:28.601916" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:28.601916" elapsed="0.000999"/>
+</branch>
+<status status="PASS" start="2026-01-05T07:46:28.360065" elapsed="0.242850"/>
+</if>
+<kw name="abrir formulario">
+<kw name="Click" owner="Browser">
+<msg time="2026-01-05T07:46:28.603915" level="INFO">Clicks the element 'xpath=//*[@id="jh-create-entity"]'.</msg>
+<arg>xpath=//*[@id="jh-create-entity"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:28.602915" elapsed="0.159581"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:28.777284" level="INFO">Waited for Element with selector xpath=//*[@id="jhi-commitment-heading"][contains(text(), "Criar ou editar Compromisso")] at state visible</msg>
+<arg>xpath=//*[@id="jhi-commitment-heading"][contains(text(), "Criar ou editar Compromisso")]</arg>
+<arg>visible</arg>
+<arg>timeout=20s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:28.763498" elapsed="0.013786"/>
+</kw>
+<status status="PASS" start="2026-01-05T07:46:28.602915" elapsed="0.174369"/>
+</kw>
+<if>
+<branch type="IF" condition="${tamanho} == 0">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-05T07:46:28.785720" level="INFO">${repeticao} = 0</msg>
+<var>${repeticao}</var>
+<arg>0</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-05T07:46:28.785720" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-01-05T07:46:28.777284" elapsed="0.008436"/>
+</branch>
+<branch type="ELSE">
+<kw name="Split String" owner="String">
+<var>${partes}</var>
+<arg>${matches[0]}</arg>
+<arg>/</arg>
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<status status="NOT RUN" start="2026-01-05T07:46:28.785720" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${repeticao}</var>
+<arg>${partes[1]}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2026-01-05T07:46:28.785720" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:28.785720" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2026-01-05T07:46:28.777284" elapsed="0.008436"/>
+</if>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-05T07:46:28.785720" level="INFO">${categoria} = Transporte</msg>
+<var>${categoria}</var>
+<arg>${row['Categoria']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-05T07:46:28.785720" elapsed="0.000000"/>
+</kw>
+<kw name="preencher formulario">
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-05T07:46:28.785720" level="INFO">Fills the text '31/12/2025' in the given field.</msg>
+<arg>xpath=//*[@id="field_dia"]</arg>
+<arg>${data}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:28.785720" elapsed="0.020050"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:28.814625" level="INFO">Waited for Element with selector xpath=//*[@id="field_valor"] at state visible</msg>
+<arg>xpath=//*[@id="field_valor"]</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:28.805770" elapsed="0.008855"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:28.827163" level="INFO">Waited for Element with selector xpath=//*[@id="field_valor"] at state editable</msg>
+<arg>xpath=//*[@id="field_valor"]</arg>
+<arg>editable</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:28.814625" elapsed="0.012538"/>
+</kw>
+<kw name="Clear Text" owner="Browser">
+<arg>xpath=//*[@id="field_valor"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:28.827163" elapsed="0.026706"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2026-01-05T07:46:28.859037" level="INFO">${texto} = 194.73</msg>
+<var>${texto}</var>
+<arg>${valor}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2026-01-05T07:46:28.859037" elapsed="0.000000"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2026-01-05T07:46:28.859969" level="INFO">${novo_valor} = 194,73</msg>
+<var>${novo_valor}</var>
+<arg>${texto}</arg>
+<arg>.</arg>
+<arg>,</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2026-01-05T07:46:28.859037" elapsed="0.000932"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-05T07:46:28.860535" level="INFO">Fills the text '194.73' in the given field.</msg>
+<arg>xpath=//*[@id="field_valor"]</arg>
+<arg>${texto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:28.860535" elapsed="0.000000"/>
+</kw>
+<kw name="Press Keys" owner="Browser">
+<arg>xpath=//*[@id="field_valor"]</arg>
+<arg>Tab</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given key combination into element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:28.860535" elapsed="0.016677"/>
+</kw>
+<kw name="Focus" owner="Browser">
+<arg>xpath=//*[@id="field_valor"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Moves focus on to the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:28.877212" elapsed="0.016560"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-05T07:46:28.893772" level="INFO">Fills the text 'Postoviamare' in the given field.</msg>
+<arg>xpath=//*[@id="field_historia"]</arg>
+<arg>${historia}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:28.893772" elapsed="0.029865"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-05T07:46:28.927808" level="INFO">Fills the text '0' in the given field.</msg>
+<arg>xpath=//*[@id="field_nrepeat"]</arg>
+<arg>${repeticao}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:28.923637" elapsed="0.020700"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:28.956021" level="INFO">Waited for Element with selector xpath=//*[@id="field_natureplan"] at state attached</msg>
+<arg>${XPATH_INPUT_CATEGORIA}</arg>
+<arg>attached</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:28.946342" elapsed="0.009679"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:28.960338" level="INFO">Waited for Element with selector xpath=//*[@id="field_natureplan"] at state visible</msg>
+<arg>${XPATH_INPUT_CATEGORIA}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:28.956021" elapsed="0.004317"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:28.976509" level="INFO">Waited for Element with selector xpath=//*[@id="field_natureplan"] at state enabled</msg>
+<arg>${XPATH_INPUT_CATEGORIA}</arg>
+<arg>enabled</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:28.960338" elapsed="0.016171"/>
+</kw>
+<kw name="Select Options By" owner="Browser">
+<msg time="2026-01-05T07:46:28.977098" level="INFO">Selects the option(s) Transporte by attribute SelectAttribute.label from element xpath=//*[@id="field_natureplan"].</msg>
+<arg>${XPATH_INPUT_CATEGORIA}</arg>
+<arg>Label</arg>
+<arg>${categoria}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:28.977098" elapsed="0.016572"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-01-05T07:46:28.993670" level="INFO">Clicks the element 'xpath=//*[@id="save-entity"]'.</msg>
+<arg>xpath=//*[@id="save-entity"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:28.993670" elapsed="0.070554"/>
+</kw>
+<if>
+<branch type="IF" condition="'${cartao}' == &quot;Carrefour Adriana&quot;">
+<kw name="espera relatorio carrefour adriana">
+<status status="NOT RUN" start="2026-01-05T07:46:29.064224" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:29.064224" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Elo Cetelen&quot;">
+<kw name="espera relatorio elo">
+<status status="NOT RUN" start="2026-01-05T07:46:29.064224" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:29.064224" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Mercado Pago Adriana&quot;">
+<kw name="espera relatorio mercado pago adriana">
+<status status="NOT RUN" start="2026-01-05T07:46:29.077832" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:29.064224" elapsed="0.014598"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Mercado Pago&quot;">
+<kw name="espera relatorio mercado pago">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:29.133471" level="INFO">Waited for Element with selector xpath=//*[@id="page-heading"]/span[contains(text(), "Compromissos a Pagar- Cartão Mercado Pago ")] at state visible</msg>
+<arg>xpath=//*[@id="page-heading"]/span[contains(text(), "Compromissos a Pagar- Cartão Mercado Pago ")]</arg>
+<arg>visible</arg>
+<arg>timeout=20s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:29.078822" elapsed="0.054649"/>
+</kw>
+<status status="PASS" start="2026-01-05T07:46:29.078822" elapsed="0.054649"/>
+</kw>
+<status status="PASS" start="2026-01-05T07:46:29.078822" elapsed="0.054649"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Rener Adriana&quot;">
+<kw name="espera relatorio renner adriana">
+<status status="NOT RUN" start="2026-01-05T07:46:29.133471" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:29.133471" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Itau Card&quot;">
+<kw name="espera relatorio itau">
+<status status="NOT RUN" start="2026-01-05T07:46:29.133471" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:29.133471" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Carrefour&quot;">
+<kw name="espera relatorio carrefour">
+<status status="NOT RUN" start="2026-01-05T07:46:29.133471" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:29.133471" elapsed="0.009709"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Casas Bahia&quot;">
+<kw name="espera relatorio casa bahia">
+<status status="NOT RUN" start="2026-01-05T07:46:29.143997" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:29.143180" elapsed="0.001985"/>
+</branch>
+<status status="PASS" start="2026-01-05T07:46:29.064224" elapsed="0.080941"/>
+</if>
+<arg>${data}</arg>
+<arg>${valor}</arg>
+<arg>${historia}</arg>
+<arg>${repeticao}</arg>
+<arg>${categoria}</arg>
+<arg>${cartao}</arg>
+<status status="PASS" start="2026-01-05T07:46:28.785720" elapsed="0.359445"/>
+</kw>
+<var name="${row}">{'Data': '31/12/2025', 'Descrição': 'Postoviamare', 'Valor': 194.73, 'Categoria': 'Transporte', 'Cartão': 'Mercado Pago', 'CategoriaId': None}</var>
+<status status="PASS" start="2026-01-05T07:46:28.349721" elapsed="0.795444"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-05T07:46:29.150297" level="INFO">${data} = 30/12/2025</msg>
+<var>${data}</var>
+<arg>${row['Data']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-05T07:46:29.148158" elapsed="0.002139"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-05T07:46:29.151738" level="INFO">${valor} = 169.9</msg>
+<var>${valor}</var>
+<arg>${row['Valor']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-05T07:46:29.150611" elapsed="0.001127"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-05T07:46:29.152737" level="INFO">${historia} = Atacadao 0217 as 1/3</msg>
+<var>${historia}</var>
+<arg>${row['Descrição']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-05T07:46:29.151738" elapsed="0.000999"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-05T07:46:29.153140" level="INFO">${cartao} = Mercado Pago</msg>
+<var>${cartao}</var>
+<arg>${row['Cartão']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-05T07:46:29.152737" elapsed="0.000403"/>
+</kw>
+<kw name="Get Regexp Matches" owner="String">
+<msg time="2026-01-05T07:46:29.154332" level="INFO">${matches} = ['1/3']</msg>
+<var>${matches}</var>
+<arg>${historia}</arg>
+<arg>(\\d{1,2})/(\\d{1,2})</arg>
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<status status="PASS" start="2026-01-05T07:46:29.153140" elapsed="0.001192"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2026-01-05T07:46:29.154332" level="INFO">Length is 1.</msg>
+<msg time="2026-01-05T07:46:29.154332" level="INFO">${tamanho} = 1</msg>
+<var>${tamanho}</var>
+<arg>${matches}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2026-01-05T07:46:29.154332" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="'${cartao}' == &quot;Carrefour Adriana&quot;">
+<kw name="abrir relatorio carrefour adriana">
+<status status="NOT RUN" start="2026-01-05T07:46:29.155336" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:29.155336" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Elo Cetelen&quot;">
+<kw name="abrir relatorio elo">
+<status status="NOT RUN" start="2026-01-05T07:46:29.156331" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:29.155336" elapsed="0.000995"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Mercado Pago Adriana&quot;">
+<kw name="abrir relatorio mercado pago adriana">
+<status status="NOT RUN" start="2026-01-05T07:46:29.156331" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:29.156331" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Mercado Pago&quot;">
+<kw name="abrir relatorio mercado pago">
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2026-01-05T07:46:29.157333" level="INFO">${url} = http://localhost:8081/commitment/person/5351/P</msg>
+<var>${url}</var>
+<arg>${PAGE}commitment/person/5351/P</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="PASS" start="2026-01-05T07:46:29.157333" elapsed="0.000000"/>
+</kw>
+<kw name="Go To" owner="Browser">
+<msg time="2026-01-05T07:46:29.265823" level="INFO">Successfully opened URL http://localhost:8081/commitment/person/5351/P</msg>
+<arg>${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2026-01-05T07:46:29.158333" elapsed="0.108489"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:29.411257" level="INFO">Waited for Element with selector xpath=//*[@id="page-heading"]/span[contains(text(), "Compromissos a Pagar- Cartão Mercado Pago ")] at state visible</msg>
+<arg>xpath=//*[@id="page-heading"]/span[contains(text(), "Compromissos a Pagar- Cartão Mercado Pago ")]</arg>
+<arg>visible</arg>
+<arg>timeout=20s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:29.266822" elapsed="0.144435"/>
+</kw>
+<status status="PASS" start="2026-01-05T07:46:29.157333" elapsed="0.254930"/>
+</kw>
+<status status="PASS" start="2026-01-05T07:46:29.156331" elapsed="0.255932"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Rener Adriana&quot;">
+<kw name="abrir relatorio renner adriana">
+<status status="NOT RUN" start="2026-01-05T07:46:29.412749" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:29.412263" elapsed="0.000486"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Itau Card&quot;">
+<kw name="abrir relatorio itau">
+<status status="NOT RUN" start="2026-01-05T07:46:29.412749" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:29.412749" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Carrefour&quot;">
+<kw name="abrir relatorio carrefour">
+<status status="NOT RUN" start="2026-01-05T07:46:29.412749" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:29.412749" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Casas Bahia&quot;">
+<kw name="abrir relatorio casas bahia">
+<status status="NOT RUN" start="2026-01-05T07:46:29.412749" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:29.412749" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2026-01-05T07:46:29.155336" elapsed="0.257413"/>
+</if>
+<kw name="abrir formulario">
+<kw name="Click" owner="Browser">
+<msg time="2026-01-05T07:46:29.412749" level="INFO">Clicks the element 'xpath=//*[@id="jh-create-entity"]'.</msg>
+<arg>xpath=//*[@id="jh-create-entity"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:29.412749" elapsed="0.075412"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:29.544808" level="INFO">Waited for Element with selector xpath=//*[@id="jhi-commitment-heading"][contains(text(), "Criar ou editar Compromisso")] at state visible</msg>
+<arg>xpath=//*[@id="jhi-commitment-heading"][contains(text(), "Criar ou editar Compromisso")]</arg>
+<arg>visible</arg>
+<arg>timeout=20s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:29.488161" elapsed="0.057464"/>
+</kw>
+<status status="PASS" start="2026-01-05T07:46:29.412749" elapsed="0.132876"/>
+</kw>
+<if>
+<branch type="IF" condition="${tamanho} == 0">
+<kw name="Set Variable" owner="BuiltIn">
+<var>${repeticao}</var>
+<arg>0</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2026-01-05T07:46:29.545625" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:29.545625" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE">
+<kw name="Split String" owner="String">
+<msg time="2026-01-05T07:46:29.550828" level="INFO">${partes} = ['1', '3']</msg>
+<var>${partes}</var>
+<arg>${matches[0]}</arg>
+<arg>/</arg>
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<status status="PASS" start="2026-01-05T07:46:29.548811" elapsed="0.002017"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-05T07:46:29.552840" level="INFO">${repeticao} = 3</msg>
+<var>${repeticao}</var>
+<arg>${partes[1]}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-05T07:46:29.550828" elapsed="0.002012"/>
+</kw>
+<status status="PASS" start="2026-01-05T07:46:29.545625" elapsed="0.007215"/>
+</branch>
+<status status="PASS" start="2026-01-05T07:46:29.545625" elapsed="0.007215"/>
+</if>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-05T07:46:29.552840" level="INFO">${categoria} = Alimentacao</msg>
+<var>${categoria}</var>
+<arg>${row['Categoria']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-05T07:46:29.552840" elapsed="0.000000"/>
+</kw>
+<kw name="preencher formulario">
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-05T07:46:29.552840" level="INFO">Fills the text '30/12/2025' in the given field.</msg>
+<arg>xpath=//*[@id="field_dia"]</arg>
+<arg>${data}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:29.552840" elapsed="0.017401"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:29.580874" level="INFO">Waited for Element with selector xpath=//*[@id="field_valor"] at state visible</msg>
+<arg>xpath=//*[@id="field_valor"]</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:29.570241" elapsed="0.010633"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:29.610278" level="INFO">Waited for Element with selector xpath=//*[@id="field_valor"] at state editable</msg>
+<arg>xpath=//*[@id="field_valor"]</arg>
+<arg>editable</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:29.580874" elapsed="0.029404"/>
+</kw>
+<kw name="Clear Text" owner="Browser">
+<arg>xpath=//*[@id="field_valor"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:29.610278" elapsed="0.018550"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2026-01-05T07:46:29.628828" level="INFO">${texto} = 169.9</msg>
+<var>${texto}</var>
+<arg>${valor}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2026-01-05T07:46:29.628828" elapsed="0.000000"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2026-01-05T07:46:29.628828" level="INFO">${novo_valor} = 169,9</msg>
+<var>${novo_valor}</var>
+<arg>${texto}</arg>
+<arg>.</arg>
+<arg>,</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2026-01-05T07:46:29.628828" elapsed="0.000000"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-05T07:46:29.628828" level="INFO">Fills the text '169.9' in the given field.</msg>
+<arg>xpath=//*[@id="field_valor"]</arg>
+<arg>${texto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:29.628828" elapsed="0.014738"/>
+</kw>
+<kw name="Press Keys" owner="Browser">
+<arg>xpath=//*[@id="field_valor"]</arg>
+<arg>Tab</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given key combination into element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:29.643566" elapsed="0.030786"/>
+</kw>
+<kw name="Focus" owner="Browser">
+<arg>xpath=//*[@id="field_valor"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Moves focus on to the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:29.674352" elapsed="0.002586"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-05T07:46:29.691627" level="INFO">Fills the text 'Atacadao 0217 as 1/3' in the given field.</msg>
+<arg>xpath=//*[@id="field_historia"]</arg>
+<arg>${historia}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:29.676938" elapsed="0.036984"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-05T07:46:29.715934" level="INFO">Fills the text '3' in the given field.</msg>
+<arg>xpath=//*[@id="field_nrepeat"]</arg>
+<arg>${repeticao}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:29.713922" elapsed="0.019024"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:29.741882" level="INFO">Waited for Element with selector xpath=//*[@id="field_natureplan"] at state attached</msg>
+<arg>${XPATH_INPUT_CATEGORIA}</arg>
+<arg>attached</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:29.734957" elapsed="0.006925"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:29.752449" level="INFO">Waited for Element with selector xpath=//*[@id="field_natureplan"] at state visible</msg>
+<arg>${XPATH_INPUT_CATEGORIA}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:29.741882" elapsed="0.010567"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:29.770000" level="INFO">Waited for Element with selector xpath=//*[@id="field_natureplan"] at state enabled</msg>
+<arg>${XPATH_INPUT_CATEGORIA}</arg>
+<arg>enabled</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:29.752449" elapsed="0.017551"/>
+</kw>
+<kw name="Select Options By" owner="Browser">
+<msg time="2026-01-05T07:46:29.771278" level="INFO">Selects the option(s) Alimentacao by attribute SelectAttribute.label from element xpath=//*[@id="field_natureplan"].</msg>
+<arg>${XPATH_INPUT_CATEGORIA}</arg>
+<arg>Label</arg>
+<arg>${categoria}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:29.770000" elapsed="0.025567"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-01-05T07:46:29.795567" level="INFO">Clicks the element 'xpath=//*[@id="save-entity"]'.</msg>
+<arg>xpath=//*[@id="save-entity"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:29.795567" elapsed="0.052006"/>
+</kw>
+<if>
+<branch type="IF" condition="'${cartao}' == &quot;Carrefour Adriana&quot;">
+<kw name="espera relatorio carrefour adriana">
+<status status="NOT RUN" start="2026-01-05T07:46:29.847573" elapsed="0.002015"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:29.847573" elapsed="0.002015"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Elo Cetelen&quot;">
+<kw name="espera relatorio elo">
+<status status="NOT RUN" start="2026-01-05T07:46:29.849588" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:29.849588" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Mercado Pago Adriana&quot;">
+<kw name="espera relatorio mercado pago adriana">
+<status status="NOT RUN" start="2026-01-05T07:46:29.849588" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:29.849588" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Mercado Pago&quot;">
+<kw name="espera relatorio mercado pago">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:29.907903" level="INFO">Waited for Element with selector xpath=//*[@id="page-heading"]/span[contains(text(), "Compromissos a Pagar- Cartão Mercado Pago ")] at state visible</msg>
+<arg>xpath=//*[@id="page-heading"]/span[contains(text(), "Compromissos a Pagar- Cartão Mercado Pago ")]</arg>
+<arg>visible</arg>
+<arg>timeout=20s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:29.851599" elapsed="0.056304"/>
+</kw>
+<status status="PASS" start="2026-01-05T07:46:29.849588" elapsed="0.059950"/>
+</kw>
+<status status="PASS" start="2026-01-05T07:46:29.849588" elapsed="0.059950"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Rener Adriana&quot;">
+<kw name="espera relatorio renner adriana">
+<status status="NOT RUN" start="2026-01-05T07:46:29.910175" elapsed="0.001162"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:29.910175" elapsed="0.001162"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Itau Card&quot;">
+<kw name="espera relatorio itau">
+<status status="NOT RUN" start="2026-01-05T07:46:29.912335" elapsed="0.001037"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:29.911337" elapsed="0.002035"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Carrefour&quot;">
+<kw name="espera relatorio carrefour">
+<status status="NOT RUN" start="2026-01-05T07:46:29.915335" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:29.913372" elapsed="0.002961"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Casas Bahia&quot;">
+<kw name="espera relatorio casa bahia">
+<status status="NOT RUN" start="2026-01-05T07:46:29.917331" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:29.916333" elapsed="0.002004"/>
+</branch>
+<status status="PASS" start="2026-01-05T07:46:29.847573" elapsed="0.070764"/>
+</if>
+<arg>${data}</arg>
+<arg>${valor}</arg>
+<arg>${historia}</arg>
+<arg>${repeticao}</arg>
+<arg>${categoria}</arg>
+<arg>${cartao}</arg>
+<status status="PASS" start="2026-01-05T07:46:29.552840" elapsed="0.365497"/>
+</kw>
+<var name="${row}">{'Data': '30/12/2025', 'Descrição': 'Atacadao 0217 as 1/3', 'Valor': 169.9, 'Categoria': 'Alimentacao', 'Cartão': 'Mercado Pago', 'CategoriaId': None}</var>
+<status status="PASS" start="2026-01-05T07:46:29.146162" elapsed="0.772175"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-05T07:46:29.921073" level="INFO">${data} = 30/12/2025</msg>
+<var>${data}</var>
+<arg>${row['Data']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-05T07:46:29.920060" elapsed="0.001013"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-05T07:46:29.923189" level="INFO">${valor} = 72.99</msg>
+<var>${valor}</var>
+<arg>${row['Valor']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-05T07:46:29.921073" elapsed="0.002491"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-05T07:46:29.924786" level="INFO">${historia} = Petz</msg>
+<var>${historia}</var>
+<arg>${row['Descrição']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-05T07:46:29.923564" elapsed="0.001222"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-05T07:46:29.926789" level="INFO">${cartao} = Mercado Pago</msg>
+<var>${cartao}</var>
+<arg>${row['Cartão']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-05T07:46:29.924786" elapsed="0.002003"/>
+</kw>
+<kw name="Get Regexp Matches" owner="String">
+<msg time="2026-01-05T07:46:29.927788" level="INFO">${matches} = []</msg>
+<var>${matches}</var>
+<arg>${historia}</arg>
+<arg>(\\d{1,2})/(\\d{1,2})</arg>
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<status status="PASS" start="2026-01-05T07:46:29.926789" elapsed="0.000999"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2026-01-05T07:46:29.929791" level="INFO">Length is 0.</msg>
+<msg time="2026-01-05T07:46:29.929791" level="INFO">${tamanho} = 0</msg>
+<var>${tamanho}</var>
+<arg>${matches}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2026-01-05T07:46:29.929791" elapsed="0.001000"/>
+</kw>
+<if>
+<branch type="IF" condition="'${cartao}' == &quot;Carrefour Adriana&quot;">
+<kw name="abrir relatorio carrefour adriana">
+<status status="NOT RUN" start="2026-01-05T07:46:29.930791" elapsed="0.001000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:29.930791" elapsed="0.001000"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Elo Cetelen&quot;">
+<kw name="abrir relatorio elo">
+<status status="NOT RUN" start="2026-01-05T07:46:29.931791" elapsed="0.000998"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:29.931791" elapsed="0.000998"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Mercado Pago Adriana&quot;">
+<kw name="abrir relatorio mercado pago adriana">
+<status status="NOT RUN" start="2026-01-05T07:46:29.932789" elapsed="0.001000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:29.932789" elapsed="0.001000"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Mercado Pago&quot;">
+<kw name="abrir relatorio mercado pago">
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2026-01-05T07:46:29.934793" level="INFO">${url} = http://localhost:8081/commitment/person/5351/P</msg>
+<var>${url}</var>
+<arg>${PAGE}commitment/person/5351/P</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="PASS" start="2026-01-05T07:46:29.934793" elapsed="0.000998"/>
+</kw>
+<kw name="Go To" owner="Browser">
+<msg time="2026-01-05T07:46:30.077269" level="INFO">Successfully opened URL http://localhost:8081/commitment/person/5351/P</msg>
+<arg>${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2026-01-05T07:46:29.935791" elapsed="0.141478"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:30.202263" level="INFO">Waited for Element with selector xpath=//*[@id="page-heading"]/span[contains(text(), "Compromissos a Pagar- Cartão Mercado Pago ")] at state visible</msg>
+<arg>xpath=//*[@id="page-heading"]/span[contains(text(), "Compromissos a Pagar- Cartão Mercado Pago ")]</arg>
+<arg>visible</arg>
+<arg>timeout=20s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:30.078268" elapsed="0.123995"/>
+</kw>
+<status status="PASS" start="2026-01-05T07:46:29.933789" elapsed="0.268474"/>
+</kw>
+<status status="PASS" start="2026-01-05T07:46:29.933789" elapsed="0.268474"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Rener Adriana&quot;">
+<kw name="abrir relatorio renner adriana">
+<status status="NOT RUN" start="2026-01-05T07:46:30.202263" elapsed="0.001000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:30.202263" elapsed="0.001000"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Itau Card&quot;">
+<kw name="abrir relatorio itau">
+<status status="NOT RUN" start="2026-01-05T07:46:30.203263" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:30.203263" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Carrefour&quot;">
+<kw name="abrir relatorio carrefour">
+<status status="NOT RUN" start="2026-01-05T07:46:30.203263" elapsed="0.000997"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:30.203263" elapsed="0.000997"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Casas Bahia&quot;">
+<kw name="abrir relatorio casas bahia">
+<status status="NOT RUN" start="2026-01-05T07:46:30.204260" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:30.204260" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2026-01-05T07:46:29.930791" elapsed="0.273469"/>
+</if>
+<kw name="abrir formulario">
+<kw name="Click" owner="Browser">
+<msg time="2026-01-05T07:46:30.206269" level="INFO">Clicks the element 'xpath=//*[@id="jh-create-entity"]'.</msg>
+<arg>xpath=//*[@id="jh-create-entity"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:30.205262" elapsed="0.080767"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:30.335025" level="INFO">Waited for Element with selector xpath=//*[@id="jhi-commitment-heading"][contains(text(), "Criar ou editar Compromisso")] at state visible</msg>
+<arg>xpath=//*[@id="jhi-commitment-heading"][contains(text(), "Criar ou editar Compromisso")]</arg>
+<arg>visible</arg>
+<arg>timeout=20s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:30.286029" elapsed="0.048996"/>
+</kw>
+<status status="PASS" start="2026-01-05T07:46:30.204260" elapsed="0.133472"/>
+</kw>
+<if>
+<branch type="IF" condition="${tamanho} == 0">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-05T07:46:30.339749" level="INFO">${repeticao} = 0</msg>
+<var>${repeticao}</var>
+<arg>0</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-05T07:46:30.337732" elapsed="0.002017"/>
+</kw>
+<status status="PASS" start="2026-01-05T07:46:30.337732" elapsed="0.002017"/>
+</branch>
+<branch type="ELSE">
+<kw name="Split String" owner="String">
+<var>${partes}</var>
+<arg>${matches[0]}</arg>
+<arg>/</arg>
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<status status="NOT RUN" start="2026-01-05T07:46:30.339749" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${repeticao}</var>
+<arg>${partes[1]}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2026-01-05T07:46:30.339749" elapsed="0.002012"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:30.339749" elapsed="0.002012"/>
+</branch>
+<status status="PASS" start="2026-01-05T07:46:30.337732" elapsed="0.004029"/>
+</if>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-05T07:46:30.343201" level="INFO">${categoria} = Pet</msg>
+<var>${categoria}</var>
+<arg>${row['Categoria']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-05T07:46:30.341761" elapsed="0.003453"/>
+</kw>
+<kw name="preencher formulario">
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-05T07:46:30.347226" level="INFO">Fills the text '30/12/2025' in the given field.</msg>
+<arg>xpath=//*[@id="field_dia"]</arg>
+<arg>${data}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:30.345214" elapsed="0.016712"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:30.367000" level="INFO">Waited for Element with selector xpath=//*[@id="field_valor"] at state visible</msg>
+<arg>xpath=//*[@id="field_valor"]</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:30.361926" elapsed="0.005074"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:30.393208" level="INFO">Waited for Element with selector xpath=//*[@id="field_valor"] at state editable</msg>
+<arg>xpath=//*[@id="field_valor"]</arg>
+<arg>editable</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:30.367000" elapsed="0.026208"/>
+</kw>
+<kw name="Clear Text" owner="Browser">
+<arg>xpath=//*[@id="field_valor"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:30.393208" elapsed="0.016539"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2026-01-05T07:46:30.409747" level="INFO">${texto} = 72.99</msg>
+<var>${texto}</var>
+<arg>${valor}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2026-01-05T07:46:30.409747" elapsed="0.000000"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2026-01-05T07:46:30.409747" level="INFO">${novo_valor} = 72,99</msg>
+<var>${novo_valor}</var>
+<arg>${texto}</arg>
+<arg>.</arg>
+<arg>,</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2026-01-05T07:46:30.409747" elapsed="0.000000"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-05T07:46:30.409747" level="INFO">Fills the text '72.99' in the given field.</msg>
+<arg>xpath=//*[@id="field_valor"]</arg>
+<arg>${texto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:30.409747" elapsed="0.016962"/>
+</kw>
+<kw name="Press Keys" owner="Browser">
+<arg>xpath=//*[@id="field_valor"]</arg>
+<arg>Tab</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given key combination into element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:30.426709" elapsed="0.016493"/>
+</kw>
+<kw name="Focus" owner="Browser">
+<arg>xpath=//*[@id="field_valor"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Moves focus on to the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:30.443202" elapsed="0.023487"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-05T07:46:30.466689" level="INFO">Fills the text 'Petz' in the given field.</msg>
+<arg>xpath=//*[@id="field_historia"]</arg>
+<arg>${historia}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:30.466689" elapsed="0.009731"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-05T07:46:30.476420" level="INFO">Fills the text '0' in the given field.</msg>
+<arg>xpath=//*[@id="field_nrepeat"]</arg>
+<arg>${repeticao}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:30.476420" elapsed="0.025463"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:30.512314" level="INFO">Waited for Element with selector xpath=//*[@id="field_natureplan"] at state attached</msg>
+<arg>${XPATH_INPUT_CATEGORIA}</arg>
+<arg>attached</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:30.501883" elapsed="0.010431"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:30.512314" level="INFO">Waited for Element with selector xpath=//*[@id="field_natureplan"] at state visible</msg>
+<arg>${XPATH_INPUT_CATEGORIA}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:30.512314" elapsed="0.000000"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:30.526268" level="INFO">Waited for Element with selector xpath=//*[@id="field_natureplan"] at state enabled</msg>
+<arg>${XPATH_INPUT_CATEGORIA}</arg>
+<arg>enabled</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:30.512314" elapsed="0.013954"/>
+</kw>
+<kw name="Select Options By" owner="Browser">
+<msg time="2026-01-05T07:46:30.526268" level="INFO">Selects the option(s) Pet by attribute SelectAttribute.label from element xpath=//*[@id="field_natureplan"].</msg>
+<arg>${XPATH_INPUT_CATEGORIA}</arg>
+<arg>Label</arg>
+<arg>${categoria}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:30.526268" elapsed="0.033593"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-01-05T07:46:30.559861" level="INFO">Clicks the element 'xpath=//*[@id="save-entity"]'.</msg>
+<arg>xpath=//*[@id="save-entity"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-05T07:46:30.559861" elapsed="0.078812"/>
+</kw>
+<if>
+<branch type="IF" condition="'${cartao}' == &quot;Carrefour Adriana&quot;">
+<kw name="espera relatorio carrefour adriana">
+<status status="NOT RUN" start="2026-01-05T07:46:30.638673" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:30.638673" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Elo Cetelen&quot;">
+<kw name="espera relatorio elo">
+<status status="NOT RUN" start="2026-01-05T07:46:30.643436" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:30.638673" elapsed="0.004763"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Mercado Pago Adriana&quot;">
+<kw name="espera relatorio mercado pago adriana">
+<status status="NOT RUN" start="2026-01-05T07:46:30.645471" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:30.643436" elapsed="0.002035"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Mercado Pago&quot;">
+<kw name="espera relatorio mercado pago">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-05T07:46:30.743595" level="INFO">Waited for Element with selector xpath=//*[@id="page-heading"]/span[contains(text(), "Compromissos a Pagar- Cartão Mercado Pago ")] at state visible</msg>
+<arg>xpath=//*[@id="page-heading"]/span[contains(text(), "Compromissos a Pagar- Cartão Mercado Pago ")]</arg>
+<arg>visible</arg>
+<arg>timeout=20s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-05T07:46:30.645471" elapsed="0.098124"/>
+</kw>
+<status status="PASS" start="2026-01-05T07:46:30.645471" elapsed="0.098124"/>
+</kw>
+<status status="PASS" start="2026-01-05T07:46:30.645471" elapsed="0.098124"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Rener Adriana&quot;">
+<kw name="espera relatorio renner adriana">
+<status status="NOT RUN" start="2026-01-05T07:46:30.743595" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:30.743595" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Itau Card&quot;">
+<kw name="espera relatorio itau">
+<status status="NOT RUN" start="2026-01-05T07:46:30.743595" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:30.743595" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Carrefour&quot;">
+<kw name="espera relatorio carrefour">
+<status status="NOT RUN" start="2026-01-05T07:46:30.743595" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:30.743595" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${cartao}' == &quot;Casas Bahia&quot;">
+<kw name="espera relatorio casa bahia">
+<status status="NOT RUN" start="2026-01-05T07:46:30.743595" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-05T07:46:30.743595" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2026-01-05T07:46:30.638673" elapsed="0.104922"/>
+</if>
+<arg>${data}</arg>
+<arg>${valor}</arg>
+<arg>${historia}</arg>
+<arg>${repeticao}</arg>
+<arg>${categoria}</arg>
+<arg>${cartao}</arg>
+<status status="PASS" start="2026-01-05T07:46:30.345214" elapsed="0.398381"/>
+</kw>
+<var name="${row}">{'Data': '30/12/2025', 'Descrição': 'Petz', 'Valor': 72.99, 'Categoria': 'Pet', 'Cartão': 'Mercado Pago', 'CategoriaId': None}</var>
+<status status="PASS" start="2026-01-05T07:46:29.919329" elapsed="0.824266"/>
+</iter>
+<var>${row}</var>
+<value>@{dados}</value>
+<status status="PASS" start="2026-01-05T07:46:25.604406" elapsed="5.139189"/>
+</for>
+<arg>${EXCEL}</arg>
+<arg>${SHEET}</arg>
+<status status="PASS" start="2026-01-05T07:46:25.421144" elapsed="5.322451"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2026-01-05T07:46:31.027097" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2026-01-05T07:46:30.743595" elapsed="0.283502"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2026-01-05T07:46:31.450829" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-01-05T07:46:31.027097" elapsed="0.423732"/>
+</kw>
+<doc>Este teste abre o site oficial do Robot Framework.</doc>
+<status status="PASS" start="2026-01-05T07:46:21.304071" elapsed="10.146758"/>
+</test>
+<status status="PASS" start="2026-01-05T07:46:20.564321" elapsed="10.894133"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Inserir Cartao" id="s1" pass="1" fail="0" skip="0">Inserir Cartao</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
