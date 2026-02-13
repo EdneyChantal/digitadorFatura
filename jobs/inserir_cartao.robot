@@ -67,6 +67,10 @@ abrir relatorio casas bahia
     ${url}=     Catenate    ${PAGE}commitment/person/24351/P
     Go To   ${url}
     Wait For Elements State    xpath=//*[@id="page-heading"]/span[contains(text(), "Compromissos a Pagar- cartao casa bahia ")]     visible    timeout=20s  
+abrir relatorio nubank adriana
+    ${url}=     Catenate    ${PAGE}commitment/person/2752/P
+    Go To   ${url}
+    Wait For Elements State    xpath=//*[@id="page-heading"]/span[contains(text(), "Compromissos a Pagar- Nubank Adriana ")]     visible    timeout=20s  
 
 
 
@@ -89,6 +93,9 @@ espera relatorio mercado pago
     Wait For Elements State    xpath=//*[@id="page-heading"]/span[contains(text(), "Compromissos a Pagar- Cartão Mercado Pago ")]     visible    timeout=20s  
 espera relatorio casa bahia
     Wait For Elements State    xpath=//*[@id="page-heading"]/span[contains(text(), "Compromissos a Pagar- cartao casa bahia ")]     visible    timeout=20s  
+espera relatorio nubank adriana
+    Wait For Elements State    xpath=//*[@id="page-heading"]/span[contains(text(), "Compromissos a Pagar- Nubank Adriana ")]     visible    timeout=20s  
+
 
 
 
@@ -113,29 +120,31 @@ preencher formulario
     Wait For Elements State    ${XPATH_INPUT_CATEGORIA}    visible
     Wait For Elements State    ${XPATH_INPUT_CATEGORIA}    enabled
     Browser.Select Options By  ${XPATH_INPUT_CATEGORIA}    Label     ${categoria}
-    
+    ${cartao_normalizado}=    Strip String    ${cartao}
     #Sleep   3s
     
 
 
     Click    xpath=//*[@id="save-entity"]
     #Sleep   6s
-    IF  '${cartao}' == "Carrefour Adriana"
+    IF  '${cartao_normalizado}' == "Carrefour Adriana"
             espera relatorio carrefour adriana
-    ELSE IF  '${cartao}' == "Elo Cetelen"
+    ELSE IF  '${cartao_normalizado}' == "Elo Cetelen"
             espera relatorio elo
-    ELSE IF  '${cartao}' == "Mercado Pago Adriana"
+    ELSE IF  '${cartao_normalizado}' == "Mercado Pago Adriana"
             espera relatorio mercado pago adriana
-    ELSE IF  '${cartao}' == "Mercado Pago"
+    ELSE IF  '${cartao_normalizado}' == "Mercado Pago"
             espera relatorio mercado pago        
-    ELSE IF  '${cartao}' == "Rener Adriana"
+    ELSE IF  '${cartao_normalizado}' == "Rener Adriana"
             espera relatorio renner adriana
-    ELSE IF  '${cartao}' == "Itau Card"
+    ELSE IF  '${cartao_normalizado}' == "Itau Card"
             espera relatorio itau
-    ELSE IF  '${cartao}' == "Carrefour"
+    ELSE IF  '${cartao_normalizado}' == "Carrefour"
             espera relatorio carrefour
-    ELSE IF  '${cartao}' == "Casas Bahia" 
+    ELSE IF  '${cartao_normalizado}' == "Casas Bahia" 
             espera relatorio casa bahia       
+    ELSE IF  '${cartao_normalizado}' == "Nubank Adriana" 
+            espera relatorio nubank adriana
     END
    
 ler a planilha 
@@ -151,23 +160,26 @@ ler a planilha
         ${cartao}=      Set Variable        ${row['Cartão']}
         ${matches}=     Get Regexp Matches    ${historia}    (\\d{1,2})/(\\d{1,2})
         ${tamanho}=     Get Length    ${matches}
+        ${cartao_normalizado}=    Strip String    ${cartao}
 
-        IF  '${cartao}' == "Carrefour Adriana"
+        IF  '${cartao_normalizado}' == "Carrefour Adriana"
             abrir relatorio carrefour adriana
-        ELSE IF  '${cartao}' == "Elo Cetelen"
+        ELSE IF  '${cartao_normalizado}' == "Elo Cetelen"
             abrir relatorio elo
-        ELSE IF  '${cartao}' == "Mercado Pago Adriana"
+        ELSE IF  '${cartao_normalizado}' == "Mercado Pago Adriana"
             abrir relatorio mercado pago adriana
-        ELSE IF  '${cartao}' == "Mercado Pago"
+        ELSE IF  '${cartao_normalizado}' == "Mercado Pago"
             abrir relatorio mercado pago
-        ELSE IF  '${cartao}' == "Rener Adriana"
+        ELSE IF  '${cartao_normalizado}' == "Rener Adriana"
             abrir relatorio renner adriana
-        ELSE IF  '${cartao}' == "Itau Card"
+        ELSE IF  '${cartao_normalizado}' == "Itau Card"
             abrir relatorio itau
-        ELSE IF  '${cartao}' == "Carrefour"
+        ELSE IF  '${cartao_normalizado}' == "Carrefour"
             abrir relatorio carrefour
-        ELSE IF  '${cartao}' == "Casas Bahia" 
+        ELSE IF  '${cartao_normalizado}' == "Casas Bahia" 
             abrir relatorio casas bahia    
+        ELSE IF  '${cartao_normalizado}' == "Nubank Adriana" 
+            abrir relatorio nubank adriana
         END
 
         abrir formulario
