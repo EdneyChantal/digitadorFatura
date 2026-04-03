@@ -110,8 +110,8 @@ preencher formulario
     Wait For Elements State   xpath=//*[@id="field_valor"]     editable
     Clear Text                xpath=//*[@id="field_valor"] 
     ${texto}=    Convert To String    ${valor}
-    ${novo_valor}=    Replace String    ${texto}    .    ,
-    Fill Text    xpath=//*[@id="field_valor"]   ${texto}
+    ${novo_valor}=    Replace String    ${texto}    ,    .
+    Fill Text    xpath=//*[@id="field_valor"]   ${novo_valor}
     Press Keys                xpath=//*[@id="field_valor"]    Tab
     Focus   xpath=//*[@id="field_valor"]
     Fill Text    xpath=//*[@id="field_historia"]   ${historia}
